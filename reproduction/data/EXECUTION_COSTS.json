@@ -1,0 +1,16 @@
+{
+  "GPU_jobs": 0,
+  "ASR_or_MLM_inference_calls": 0,
+  "new_scientific_ridge_fits": 10,
+  "original_ridge_consistency_recomputations": 4,
+  "phase_CPU_wall_seconds": {
+    "fit_including_original_coefficient_consistency_checks": 11.539245781488717,
+    "evaluation": 66.05640164855868,
+    "selection": 116.75525399670005,
+    "paired_analysis": 8.949735477566719,
+    "cost_sampling_analysis": 0.22874274291098118,
+    "input_integrity": 2.3815411934629083
+  },
+  "note": "Process wall time only, not GPU cost or deployment cost. Startup failures before instrumentation have unknown duration; see RECOVERIES.json. Portable round-trip validation costs reported separately.",
+  "actual_local_environment": "reproduction/portable/LOCAL_ENVIRONMENT_METADATA.json"
+}

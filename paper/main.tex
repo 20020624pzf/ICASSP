@@ -1,0 +1,123 @@
+\documentclass{article}
+\usepackage{spconf,amsmath,amssymb,graphicx,booktabs,url,balance}
+\urlstyle{same}
+\renewcommand{\footnotesize}{\fontsize{9}{10.8}\selectfont}
+\setlength{\dbltextfloatsep}{10pt plus 2pt minus 2pt}
+\setlength{\textfloatsep}{10pt plus 2pt minus 2pt}
+\title{CONDITIONAL VALUE OF PERMUTATION SCORES\\IN FROZEN MULTILINGUAL ASR RERANKING}
+\name{Zhifan Pan\textsuperscript{1,2,3,$\dagger$}, Yuhui Ming\textsuperscript{1,2,3,$\dagger$},
+Maihemuti Maimaiti\textsuperscript{1,2,3}\sthanks{Corresponding author:
+\texttt{mahmutjan@xju.edu.cn}}, Aishan Wumaier\textsuperscript{1,2,3}}
+\address{\textsuperscript{1}School of Computer Science and Technology, Xinjiang University, Urumqi, China\\
+\textsuperscript{2}Xinjiang Multimodal Intelligent Processing and Information Security\\
+Engineering Technology Research Center, Xinjiang University, Urumqi, China\\
+\textsuperscript{3}Joint International Research Laboratory of Silk Road Multilingual\\
+Cognitive Computing, Xinjiang University, Urumqi, China}
+\begin{document}
+\ninept
+\maketitle
+\begingroup
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\footnotetext[2]{These authors contributed equally to this work.}
+\endgroup
+\begin{abstract}\input{abstract_results.tex}\end{abstract}
+\begin{keywords}speech recognition, reranking, perturbation features, multilingual evaluation, candidate selection\end{keywords}
+\section{Introduction}
+An improvement over beam search alone cannot isolate the value of a perturbation-derived ASR score. Clean-audio confidence~\cite{jiang2005}, length and candidate consensus already inform selection; external text provides a further, resource-intensive control. The relevant question is whether scoring disrupted audio adds predictive value after these signals are available.
+
+We test this question on shared frozen candidate banks. Matched feature ablations isolate the added score from candidate quality; duplicate-coordinate and alternative-parameterization controls test simpler explanations for ridge gains. Inference measurements include candidate and score acquisition.
+
+Across five languages and three recognizer checkpoints, permutation scores yield small gains over internal confidence, without established gains beyond external text. Our contribution is a controlled assessment of scoring information, parameterization, fit sensitivity and resources.
+
+\section{Related work}
+\textbf{Adaptation and reranking.} LoRA-Whisper~\cite{lorawhisper} and language experts~\cite{loraexperts} adapt ASR; we freeze it. Multilingual rescoring combines acoustics and text~\cite{gaur2022,yan2025wild}; unlike~\cite{yan2025wild}, we assume known language. RescoreBERT~\cite{rescorebert} trains a BERT reranker; we use established pseudo-log-likelihood (PLL) scoring~\cite{mlmscoring} from a frozen masked language model (MLM).
+
+\textbf{Scoring and objectives.} MBR~\cite{goel2000mbr}, minimum-WER training~\cite{mwer} and speech/text rescoring~\cite{rescoring} provide precedents. Whisper-CD~\cite{whispercd} and LCAR~\cite{lcar} alter token-wise decoding; our candidate-level CD-seq does not reproduce them. Token-probability~\cite{beyondwer} and normalization~\cite{normalization} analyses complement our feature comparisons.
+
+\section{Candidate scoring and selection}
+\begin{figure*}[t]\centering
+\includegraphics[width=\textwidth]{figures/architecture.pdf}
+\caption{Frozen reranking architecture. (a) Shared Whisper generation/scoring; only Global, Local and Text+Global use the permuted pass. XLM-R supplies PLL. Synthetic mel blocks and text LCS illustrate permutation and disagreement, not acoustic alignment. (b) Alternative fits: C includes local clean confidence; $g/l/p$ denote global/local contrasts and PLL. Dashed links carry TRAIN coefficients; locks mark frozen models.}
+\label{fig:method}\end{figure*}
+\subsection{Candidates and perturbation response}
+Frozen Whisper-small~\cite{whisper} with rank-four LoRA~\cite{lora} (Fig.~\ref{fig:method}) produces greedy (G) and five-best outputs; B5 is the beam winner $b$. WER-v3 normalization deduplicates them in beam-then-greedy order. Banks contain at most six candidates; singletons return beam.
+
+For log-mel input $X$, a recording-hash permutation $T$ reorders 20-frame blocks (about 200\,ms), including the final shorter block, before the encoder; padding and frame count stay fixed. Identity permutations rotate if two or more blocks exist. Candidate prefixes supply teacher-forced clean/permuted body-token log probabilities $\ell_t(y,X)$ and $\ell_t(y,T(X))$. Decoder inputs shift once. Special tokens and end-of-sequence (EOS) are excluded; capped outputs receive no inserted EOS. Empty means are zero. For clean/permuted body means $c(y),q(y)$,
+\begin{equation}
+ \begin{aligned}
+ a_t(y)&=\ell_t(y,X)-\ell_t(y,T(X)),\\
+ A_g(y)&=\operatorname{mean}_{t\in\mathrm{body}(y)}a_t(y)=c(y)-q(y).
+ \end{aligned}
+\end{equation}
+
+Local tests whether focusing the score on candidate disagreements improves selection. A longest common subsequence (LCS) gives unmatched positions $U(y,b)$ and $U(b,y)$; ties advance the candidate side. Define $A_l(y\mid b)=\allowbreak\operatorname{mean}_{t\in U(y,b)}a_t(y)$. Positions are text tokens, not acoustic alignments; only aggregation is local, while permutation spans the input window. References never locate these positions.
+
+\subsection{Matched confidence, perturbation and text features}
+Conf uses eight candidate-minus-beam coordinates: mean clean log probability, candidate probability, log-one-plus body-token length, log-one-plus word length, repeated four-gram proportion (frequency at least three), cap flag, MBR risk and LCS-local clean-confidence difference. Global (9D) appends $A_g(y)-A_g(b)$; Local (10D) also appends $A_l(y\mid b)-A_l(b\mid y)$. Candidate probabilities are a temperature-one softmax of summed clean log scores. MBR minimizes probability-weighted word-edit distance to candidate pseudo-references, each normalized by its own word count (at least one). CD-seq maximizes mean clean log probability plus $A_g$.
+
+Global and clean-plus-permuted coordinates span the same linear class: $\{c,c-q\}$ spans $\{c,q\}$, also after beam subtraction. Appended controls add either a duplicate clean coordinate (DupClean; no new information) or the beam-relative permuted mean (Perm). FIT RMS and ridge penalties are matched in procedure, not geometry. DupClean halves the effective penalty on its duplicated coordinate. The earlier 10D shuffled control permutes both added columns within FIT language/length strata only.
+
+Frozen XLM-R base~\cite{xlmr}, trained on multilingual CommonCrawl, masks each non-special body token separately and averages its conditional log probability~\cite{mlmscoring}. Empty text scores zero. Beyond 510 body tokens, fixed centered windows score each target once without truncation. \textbf{Text} appends candidate-minus-beam PLL to Conf; \textbf{Text+Global} also appends the global coordinate. Both retain Conf's clean-audio features.
+
+\subsection{TRAIN-only fitting and selection}
+For FIT recording $i$, candidate $y_{ik}$ and reference $r_i$, the edit-gain target is $\Delta_{ik}=E(b_i,r_i)-E(y_{ik},r_i)$, where $E$ counts substitutions, deletions and insertions (S/D/I). With $K_i$ nonbeam candidates and language FIT reference-word total $N_{\ell(i)}$, weights are proportional to $1/(N_{\ell(i)}K_i)$ and normalized to sum to one. Weighted FIT root mean square (RMS) scales features without centering, giving $z_{ik}$. Each configuration fits
+\begin{equation}
+ \widehat\theta=\arg\min_\theta\sum_{i,k}w_{ik}(\Delta_{ik}-\theta^\top z_{ik})^2+0.01\|\theta\|_2^2,
+\end{equation}
+with no intercept and matched FIT examples, targets, weights and base coordinates. Beam has a zero vector. Inference chooses the first maximum in bank order for strictly positive gain, otherwise beam. Reference transcripts and reference-derived edit counts are not supplied to the selector at inference. Recording IDs fix the deterministic permutation but are not predictor features.
+
+Exploratory minimum-WER (MWER) fitting uses temperature-one expected edit risk, including beam, with the same penalty. Weights $\propto1/N_{\ell(i)}$ omit ridge's candidate-count divisor: objective and weighting both change. Float64 L-BFGS-B selects zero/ridge starts by regularized FIT objective.
+
+\section{Experimental protocol}
+We evaluate FLEURS~\cite{fleurs} and Common Voice v27 (CV27)~\cite{cv,cv27data} in Arabic, Persian, Polish, Turkish and Italian. Three Whisper-small checkpoints (seeds 101, 202, 303) use uniform rank-four LoRA ($\alpha{=}r{=}4$, no dropout or bias) on query/key/value/output projections in 12 encoder and 24 decoder attention blocks: 144 modules, 884{,}736 trainable parameters. Six adaptation cycles used 4{,}656 updates, peak learning rate $2\times10^{-4}$, 232 warmup updates and effective batch 20; the backbone stayed frozen. Deterministic bfloat16 greedy and width-five beam decoding use known-language prompts, a 444-token cap, no sampling or repetition penalty, and beam length exponent 1.0 (\texttt{length\_penalty=1.0}). Reranking freezes ASR and LoRA.
+
+One seed101 TRAIN-FIT fit per selector serves all checkpoints, not three independent fits. Tables~\ref{tab:main}--\ref{tab:languages} report test WER; Table~\ref{tab:cost} uses test samples. DEV/CHECK are labeled. Differences are absolute percentage points, computed before rounding.
+
+FLEURS TRAIN has 13{,}602 recordings (44.60 h); 1{,}281 calibrate selectors (1{,}016 FIT, 265 diagnostic-only CHECK). DEV has 1{,}731. Calibration selects whole language-specific text-hash groups in SHA order to reach at least 256 recordings/language; a separate hash assigns FIT/CHECK (80/20). Text groups do not imply speaker independence. Each extension locks rules and coefficients before new evaluations; earlier test exposure remains (Sec.~\ref{sec:timeline}).
+
+WER-v3 fixes Unicode normalization, dotless-i conversion before Turkish lowercasing, apostrophe unification and digit folding, preserving word-internal zero-width non-joiners. WER is $100(S+D+I)/N$ with full reference-word denominator $N$; macro WER equally averages five languages. All 3{,}665 FLEURS TEST recordings (76{,}164 reference words) and 58{,}514 CV27 TEST recordings remain. Inputs are capped at 30\,s; 22 FLEURS TEST recordings exceed this window and retain full references. No CV27 TEST recording exceeds it. Recording coverage does not imply complete-audio coverage.
+
+\subsection{Timeline, uncertainty and cost}\label{sec:timeline}
+The original hypothesis was Local over Global. Original seed101 Local--B5/Conf intervals use 5{,}000 client-bootstrap draws. Later checkpoint, MWER and Text studies use exposed tests and separate families: 10{,}000 draws (seed 1729), language-stratified over 11{,}756 client clusters and paired across methods/checkpoints. Corrections are family-specific; FLEURS is descriptive. Intervals condition on fixed fits/checkpoints, excluding fit uncertainty; crossing zero does not establish equivalence. A separate four-contrast, post-review family gives 98.75\% intervals for controls and $\Delta_{\rm cond}=(W_{\rm Conf}-W_{\rm Global})\allowbreak-(W_{\rm Text}-W_{\rm Text+Global})$, with $W$ denoting macro WER. Two disjoint deterministic FIT group subsets (A/B: 513/503 recordings) refit all four ridge configurations with subset-specific scales/weights. All eight fits remain; this descriptive sensitivity check is not independent confirmation.
+
+Seed101 costs use 20 recordings per language/corpus (four per duration quintile, fixed SHA selection). Five systems receive three paired warm runs in rotated order, recomputing candidates and PLL with within-recording encoder sharing. Two A40 GPUs have shared load; loading is separate, and RTF uses processed duration. Intervals resample recordings within corpus/language/quintile after averaging repeats, conditional on observed load.
+
+\section{Results and analysis}
+\input{results.tex}\par
+\input{text_results.tex}\par
+\input{robustness_results.tex}\par
+\input{diagnostic_results.tex}\par
+\input{cost_results.tex}
+\section{Limitations and conclusion}
+\input{conclusion_results.tex}\par
+\noindent\textbf{Acknowledgments.} ChatGPT (OpenAI) assisted planning; Codex (OpenAI) assisted implementation, analysis, Figures 1--2 and drafting/editing throughout this manuscript.
+\clearpage
+\balance
+\section{Compliance with Ethical Standards}
+This study reanalysed existing FLEURS and CV27 releases under their published terms, without participant recruitment, new recordings or speaker identification. The authors are responsible for substantive arguments, verification and final approval.
+\section{Funding acknowledgments}
+Supported by the National Natural Science Foundation of China (62466058) and the Autonomous Region Key R\&D Program (2025B03042-1).
+\begin{thebibliography}{99}
+\bibitem{jiang2005} H. Jiang, ``Confidence measures for speech recognition: A survey,'' \emph{Speech Communication}, vol. 45, no. 4, pp. 455--470, 2005, doi: \url{10.1016/j.specom.2004.12.004}.
+\bibitem{lorawhisper} Z. Song, J. Zhuo, Y. Yang, Z. Ma, S. Zhang, and X. Chen, ``LoRA-Whisper: Parameter-efficient and extensible multilingual ASR,'' in \emph{Proc. Interspeech}, 2024, pp. 3934--3938, doi: \url{10.21437/Interspeech.2024-892}.
+\bibitem{loraexperts} J. Li et al., ``Efficient multilingual ASR finetuning via LoRA language experts,'' in \emph{Proc. Interspeech}, 2025, pp. 1138--1142, doi: \url{10.21437/Interspeech.2025-1374}.
+
+\bibitem{gaur2022} N. Gaur, T. Chen, E. Variani, P. Haghani, B. Ramabhadran, and P. J. Moreno, ``Multilingual second-pass rescoring for automatic speech recognition systems,'' in \emph{Proc. ICASSP}, 2022, pp. 6407--6411, doi: \url{10.1109/ICASSP43922.2022.9746453}.
+\bibitem{yan2025wild} B. Yan, V. Pratap, S. Watanabe, and M. Auli, ``Improving multilingual ASR in the wild using simple N-best re-ranking,'' in \emph{Proc. ICASSP}, 2025, pp. 1--5, doi: \url{10.1109/ICASSP49660.2025.10888575}.
+\bibitem{rescorebert} L. Xu et al., ``RescoreBERT: Discriminative speech recognition rescoring with BERT,'' in \emph{Proc. ICASSP}, 2022, pp. 6117--6121, doi: \url{10.1109/ICASSP43922.2022.9747118}.
+\bibitem{mlmscoring} J. Salazar, D. Liang, T. Q. Nguyen, and K. Kirchhoff, ``Masked language model scoring,'' in \emph{Proc. ACL}, 2020, pp. 2699--2712, doi: \url{10.18653/v1/2020.acl-main.240}.
+\bibitem{goel2000mbr} V. Goel and W. J. Byrne, ``Minimum Bayes-risk automatic speech recognition,'' \emph{Computer Speech \& Language}, vol. 14, no. 2, pp. 115--135, 2000, doi: \url{10.1006/csla.2000.0138}.
+\bibitem{mwer} R. Prabhavalkar et al., ``Minimum word error rate training for attention-based sequence-to-sequence models,'' in \emph{Proc. ICASSP}, 2018, pp. 4839--4843, doi: \url{10.1109/ICASSP.2018.8461809}.
+\bibitem{rescoring} P. G. Shivakumar et al., ``Speech recognition rescoring with large speech-text foundation models,'' in \emph{Proc. ICASSP}, 2025, pp. 1--5, doi: \url{10.1109/ICASSP49660.2025.10890616}.
+\bibitem{whispercd} H. Ahn, J. Chae, Y. Park, and K. Shim, ``Whisper-CD: Accurate long-form speech recognition using multi-negative contrastive decoding,'' in \emph{Proc. Interspeech}, 2026, pp. 804--808, \url{https://www.isca-archive.org/interspeech_2026/ahn26b_interspeech.html}.
+\bibitem{lcar} J. Kuang, L. Zheng, H. Song, Z. Cui, and S. Li, ``Likelihood-constrained acoustic reranking for training-free hallucination mitigation in LLM-based ASR,'' arXiv:2608.30776v1, 2026, preprint.
+\bibitem{beyondwer} S. Liang, N. Ballier, G.-A. Levow, and R. Wright, ``Beyond WER: Probing Whisper's sub-token decoder across diverse language resource levels,'' in \emph{Proc. EMNLP}, 2025, pp. 31237--31247, doi: \url{10.18653/v1/2025.emnlp-main.1591}.
+\bibitem{normalization} K. Manohar and L. G. Pillai, ``What is lost in normalization? Exploring pitfalls in multilingual ASR model evaluations,'' in \emph{Proc. EMNLP}, 2024, pp. 10864--10869, doi: \url{10.18653/v1/2024.emnlp-main.607}.
+\bibitem{whisper} A. Radford, J. W. Kim, T. Xu, G. Brockman, C. McLeavey, and I. Sutskever, ``Robust speech recognition via large-scale weak supervision,'' in \emph{Proc. ICML}, PMLR, vol. 202, 2023, pp. 28492--28518.
+\bibitem{lora} E. J. Hu et al., ``LoRA: Low-rank adaptation of large language models,'' in \emph{Proc. ICLR}, 2022.
+\bibitem{xlmr} A. Conneau et al., ``Unsupervised cross-lingual representation learning at scale,'' in \emph{Proc. ACL}, 2020, pp. 8440--8451, doi: \url{10.18653/v1/2020.acl-main.747}.
+\bibitem{fleurs} A. Conneau et al., ``FLEURS: Few-shot learning evaluation of universal representations of speech,'' in \emph{2022 IEEE Spoken Language Technology Workshop (SLT)}, 2023, pp. 798--805, doi: \url{10.1109/SLT54892.2023.10023141}.
+\bibitem{cv} R. Ardila et al., ``Common Voice: A massively-multilingual speech corpus,'' in \emph{Proc. LREC}, 2020, pp. 4218--4222.
+\bibitem{cv27data} Mozilla Data Collective, ``Common Voice Scripted Speech 27.0,'' release cv-corpus-27.0-2026-09-11, five-language dataset records, \url{https://mozilladatacollective.com/datasets}, accessed September 22, 2026.
+\end{thebibliography}
+\end{document}

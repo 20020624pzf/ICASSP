@@ -1,0 +1,511 @@
+{
+  "source_revision": "submission_closeout_20260924",
+  "original_files": [
+    {
+      "path": "reproduction/summarize_tables.py",
+      "sha256": "d3d6f08137683fe2d18871ec288d6d889f337d3e16d3abcafd157711a82b5499",
+      "bytes": 4346,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/summarize_counts.py",
+      "sha256": "09babafd5def8815107a7f8968f4eca488751a448ea7f554e1ca3407d33612a0",
+      "bytes": 1077,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/wer_score.py",
+      "sha256": "8b439e8b142e413cc1a6532207b9b3022252c3c82de1e04187560e66327dd280",
+      "bytes": 1336,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/requirements-cached-select.txt",
+      "sha256": "a23aaf94250a9f53031a592980142245a848e2372b6c6c3093e8260b129265b8",
+      "bytes": 13,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/source/risk_selector.py",
+      "sha256": "cd8437790c7d2853a48f1f71929c64a49a64c7a84e50f17d652c7b7a143ea39c",
+      "bytes": 2751,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/source/wer_rules_v3.py",
+      "sha256": "9e8ac7523ba836128e092f8358ea7949feb3ca16c7245c34dd8de147c19bc3fd",
+      "bytes": 5364,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/models/DIAGNOSTIC_MODELS.json",
+      "sha256": "b92b9226ac0e65ce8f21cb677167282e920b820c0d0db5d8e9bcc57b818ff2a2",
+      "bytes": 14277,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/models/MWER_MODELS.json",
+      "sha256": "b41918be66ee9caf4ebca5a38c1f497bdf63773013ad9d67d3137d21d1751abb",
+      "bytes": 45585,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/models/SELECTOR_MODELS.json",
+      "sha256": "a544704add5f4cc7b5520de58172418a4fbda8c87e8bc0c7c5f7ff2c773e12bd",
+      "bytes": 5314,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/models/TEXT_MODELS.json",
+      "sha256": "0932fa586e4f13b02ce11bd80957132ffdb7a93d5feb3f2030bafa3d8e394d65",
+      "bytes": 2991,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/portable/LOCAL_ENVIRONMENT_METADATA.json",
+      "sha256": "7b0b0b4cb2b46e0efb34910a561747e280278289a216e34c5a8788314c5f4980",
+      "bytes": 237,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/portable/asr_vendor_loader.py",
+      "sha256": "52f17fc3455f496798e929ba6c6410ef3c75f86ea0a677600e0f7dd8715a145b",
+      "bytes": 1368,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/portable/bindings/evidence/GENERATION_FREEZE.json",
+      "sha256": "adbfbba3c76154c3961df85f6369a8c00a02de2d2a2fd8d101c961631eafce56",
+      "bytes": 7706,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/portable/bindings/runs/F6-TECH-TRAIN_dev_attempt0/EFFECTIVE_GENERATION.json",
+      "sha256": "fb354075ee456c70bbe2d5f242f640228d51fc07d266a966d84be487c1b04c68",
+      "bytes": 31543,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/portable/bootstrap_diagnostics.py",
+      "sha256": "1a668447059b177f89218b8d2548101076a1682d4b6d35e10f0bbf418d2f0082",
+      "bytes": 2253,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/portable/cache_pipeline.py",
+      "sha256": "2a38c2f4b8f98ea327d4cd53c917f22aee717bccf0902e22a8af03632145df88",
+      "bytes": 8224,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/portable/config.example.json",
+      "sha256": "ab8116c82fee8322748b99ba5be1495fa0f5a9883c5b04a31f39061b0e0ab024",
+      "bytes": 550,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/portable/cost_intervals.py",
+      "sha256": "c772ec52d32da59c1f5c470b1cafa6be07913a0a40381befee2687d459a15b04",
+      "bytes": 4411,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/portable/frozen_inference.py",
+      "sha256": "b605cd2a2c03a02b96acb39ae9687d050f3a0b29ff96986e2132361b14015846",
+      "bytes": 6165,
+      "operation": "Public packaging docstring change only; executable AST unchanged"
+    },
+    {
+      "path": "reproduction/portable/prepare_inputs.py",
+      "sha256": "af2fb0c7b22bd06bb8a038ad2a6cb53a838de9a73f00a0ea84a6ae65fc44e1be",
+      "bytes": 3381,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/portable/spec.example.json",
+      "sha256": "670a189db41de1d265a0d067a8891127898ffb918a3a0d43499e8cb6267f6938",
+      "bytes": 314,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/portable/vendor/__init__.py",
+      "sha256": "c1ce547486d1cbbad60e82399f05629e818f180cb751025d1a71464c0e4c15b7",
+      "bytes": 71,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/portable/vendor/audio_core.py",
+      "sha256": "3c4dbd9ede7f9866f3b88a457cbd4e6c3131dd729f7143f0f2cbfddaf1be219b",
+      "bytes": 8233,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/portable/vendor/cluster_bootstrap.py",
+      "sha256": "1e75a91f344a151f11d61432926c528c23f51b67db41faebb1932abd7a41b879",
+      "bytes": 805,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/portable/vendor/common.py",
+      "sha256": "9826d4c36e04105241c3c50274ec66e12373e10fc77cc34639b8318ba168c93c",
+      "bytes": 505,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/portable/vendor/ir_common.py",
+      "sha256": "ae599bf938c91c9f797548ab7934fc77371b1d5ece802e097351e31fd1b35135",
+      "bytes": 53,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/portable/vendor/pll.py",
+      "sha256": "e07c3edc625162ad3ead22567594cf2924c854374475c9090467658cb318d8bd",
+      "bytes": 3084,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/portable/vendor/risk_selector.py",
+      "sha256": "cd8437790c7d2853a48f1f71929c64a49a64c7a84e50f17d652c7b7a143ea39c",
+      "bytes": 2751,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/portable/vendor/wer_rules_v3.py",
+      "sha256": "9e8ac7523ba836128e092f8358ea7949feb3ca16c7245c34dd8de147c19bc3fd",
+      "bytes": 5364,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/data/APPENDED_CPU_RESULTS.csv",
+      "sha256": "209977558d521f366739aa5e784b0df434efe2189bfe6ba7a2734b8cf5361509",
+      "bytes": 52611,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/data/APPENDED_MACRO_RESULTS.csv",
+      "sha256": "b306bd6940b23a742eb74934394f4f2a498e83a87637ada69fbf7dbe486a8c8b",
+      "bytes": 4593,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/data/COST_PAIRED_UNCERTAINTY.csv",
+      "sha256": "30723c4177b91c26f6d33a78855235d55db4ee8db1af55990e1a8528692dc580",
+      "bytes": 2328,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/data/COST_TIMINGS_ANONYMOUS.csv",
+      "sha256": "e4ce331e328060044017d23c29c8321b88222836d562847dae3711b1507fb873",
+      "bytes": 437571,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/data/CPU_ANALYSIS.json",
+      "sha256": "0df794203673abac9db6df4390af077c9ee74419ee76ab6a5ba2c27e9343de47",
+      "bytes": 11435,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/data/CV27_CLUSTER_COUNTS.npz",
+      "sha256": "f8bbf402a9e2a7591ec795672a7e78456e637e21fa4f07e780f60cc0f0511efd",
+      "bytes": 270512,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/data/EXECUTION_COSTS.json",
+      "sha256": "e38463498c6724395c4a2f906201450a8903c4f6837735961fafd1dcc941fb1a",
+      "bytes": 764,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/data/FIT_SUBSET_COUNTS.json",
+      "sha256": "7b63eed63f9cac135b3af48a79eb7bf198f90fe71c648ea53d1e9f81f271759f",
+      "bytes": 1833,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/data/INTEGRATED_RESULTS.csv",
+      "sha256": "1305346a0deb070a28f21f552faabdac3a444fe29239c21a8d19f86febd13642",
+      "bytes": 75856,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/data/PAIRED_COST_COMPARISONS.csv",
+      "sha256": "2efdfa88b5b6e0f60a55f2950917f69c604c570fa8fd6b69152c55ce45c1ac69",
+      "bytes": 1810,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/data/PAIRED_DIAGNOSTIC_INTERVALS.csv",
+      "sha256": "6d8081cb4cbc1a5140873791a31975d8efcce44ecb1a72a6999bf7c0fad83ee2",
+      "bytes": 848,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/data/legacy_language_differences.tex",
+      "sha256": "98fc5ed558fcf744edaedf09417d0d5865d49f0f30c7d050320ed05c95336617",
+      "bytes": 913,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/tables/LANGUAGE_ABSOLUTE_AND_DIFFERENCES.csv",
+      "sha256": "16b4f7d5207b1c485c72b16bc7fe35437af40029fb4b88b4d141ad5c0ec039a7",
+      "bytes": 2402,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/tables/LANGUAGE_ABSOLUTE_BY_CHECKPOINT.csv",
+      "sha256": "b446a90859572e4c0caef54596c3d63bde0bf643401b973de4ceaddea78bcd83",
+      "bytes": 14652,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/tables/language_results.tex",
+      "sha256": "f84a5c8878a2e5276f4465af718ea56cb368e5232eaac5842cb659c2086b81f8",
+      "bytes": 1317,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/config/GENERATION_FREEZE.json",
+      "sha256": "adbfbba3c76154c3961df85f6369a8c00a02de2d2a2fd8d101c961631eafce56",
+      "bytes": 7706,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/config/GENERATION_AND_METHOD_BINDING.json",
+      "sha256": "563798806176a13ecebb536b66a991928670333ae6d02d820ebb16ea571c42a2",
+      "bytes": 25404,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/config/PLL_IDENTITY.json",
+      "sha256": "1bf90e5b28d51b93f14e006ebf8128227cb83d5a62f5dea0e60a9dc5616011d8",
+      "bytes": 1032,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/config/VERSIONS_AND_ASSETS.json",
+      "sha256": "314137f4961b79d1f1bbb6c6d5ae0f5a2ba1dbc9ec7ee57d6e08cdc7184cc744",
+      "bytes": 9006,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/abstract_results.tex",
+      "sha256": "5b7134606d2f9b6adf70a0d78eaffd845feec7b548f9de1ed11d52e8388828d1",
+      "bytes": 1077,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/conclusion_results.tex",
+      "sha256": "4a81585cb54b0d37c5cb9f46cabd789b41c7df4f13b05546a76d54b09487ecae",
+      "bytes": 340,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/cost_results.tex",
+      "sha256": "d328dbe6edae12ec12ac23c40ad3444f2040b33fa248ea491660248f6f2563c1",
+      "bytes": 1406,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/diagnostic_results.tex",
+      "sha256": "4f9f5351e08977f0a69f81449f1b3d62b6194b048fb689b83990a69e23eba5ef",
+      "bytes": 973,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/language_results.tex",
+      "sha256": "9532ea96c2d06797e489267189ae261e5f2a19d9cdf10b47669f8553fdfb7e79",
+      "bytes": 1262,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/main.tex",
+      "sha256": "268199d17dbc86900a0321e2e569042e2c9e213e6e660695af4e754cc595671e",
+      "bytes": 17118,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/results.tex",
+      "sha256": "4de0f1720e3a229d777e40ba801106d12d2d2dde4df304aa8e7b55aa1322d469",
+      "bytes": 2538,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/robustness_results.tex",
+      "sha256": "e1c6c866c51dd6fb4bff0de817959da441fed83f0dc4e7e171aa7591ff8937a2",
+      "bytes": 864,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/text_results.tex",
+      "sha256": "fb587cffb91912e295ac7e8e475c248238dd781657a19d023b2502619cdc71bc",
+      "bytes": 614,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/spconf.sty",
+      "sha256": "dc5d632639040cb183f2ab62780f314845aa021be73048c8a9ec9c2072d64a86",
+      "bytes": 8798,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/IEEEbib.bst",
+      "sha256": "7e6ca0c8b72158d504a12bb091f817c07032a021ba41ca783cca4c2dd80d570b",
+      "bytes": 17903,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/requirements-figures.txt",
+      "sha256": "0ee07b23ea2afaa6975ad9952bccc262c47ad3b404d3663b0f9426a990eda08b",
+      "bytes": 16,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/requirements-synthetic.txt",
+      "sha256": "3091784e4f8a96fa6a7025eaa2041182f44bdf52bb0d6ef77e89f46404e2387f",
+      "bytes": 27,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/CALIBRATION_SPLIT_COUNTS.json",
+      "sha256": "d566ffdcfa00de1ccf504da032c35dcd24ae8ae419971c2e22c4680ec7fbfd48",
+      "bytes": 890,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/figures/architecture.pdf",
+      "sha256": "43e75353353c65958c9bd0a9d6f3f8ba3eaf7f6aa03825779d7648fc97c9a3d8",
+      "bytes": 198478,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/figures/architecture.png",
+      "sha256": "4320ebee592c38336ec76e430267e9fa1d4809f1cecd0f648c55a9afc6d30027",
+      "bytes": 286793,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/figures/architecture.svg",
+      "sha256": "25c68175f59d1fe5af712542e239d7ac8e1f4380b623ab2fb261c829c7c75e1f",
+      "bytes": 2916029,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/figures/architecture_inventory.json",
+      "sha256": "959b4c2f7e102e24596c50bcf3bb58eecba4adc0b0b08a920bc003b5d1ab3846",
+      "bytes": 15342,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/figures/architecture_v2.py",
+      "sha256": "8854f21258d54c8bc22fa621cd38436778bb7842d6861b6de1c8332374747431",
+      "bytes": 7702,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/figures/contrasts.pdf",
+      "sha256": "99c9c6ce1bbe368e16e3f6796471df03ff8ba8e64c49389cc1c09ac479e14aa7",
+      "bytes": 27584,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/figures/contrasts.png",
+      "sha256": "4e4cf224dbdf55e18dc863470ecd717f643f6d8922f1c39994ff97c2f4cc58d2",
+      "bytes": 130461,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/figures/contrasts.svg",
+      "sha256": "ac79fcfa82193c5b70613222d6c1dd642667c140e3e0f9431b4bc4c395897dfe",
+      "bytes": 19837,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/figures/contrasts_data.json",
+      "sha256": "3815aba55cdf570a5963e8735bd75e7f18f568cc802ff2548cad0b2a50a67306",
+      "bytes": 2377,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/figures/contrasts_inventory.json",
+      "sha256": "d004b898cd40a69ddb9426557aee1be3fd1d455699458f76dbf2fd18b5e2988f",
+      "bytes": 13347,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/figures/contrasts_v2.py",
+      "sha256": "28c85b85d3be1a85e8704700660cf0c29140da060c32deec348d1a043e3351e1",
+      "bytes": 3913,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/figures/figure2_rendered_values.json",
+      "sha256": "cfc56f250753f535dc47473dfecda12841af1f871b17fa5bd2a8baaa98668d1e",
+      "bytes": 6690,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/figures/figure_text_inventory.json",
+      "sha256": "234caaf86f7d212a1fd708002e3e528638da43dd7023d22a1a1fb53a1c729e84",
+      "bytes": 31867,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/figures/redraw_publication.py",
+      "sha256": "e6bd1cdb0c2e64887717f350724291afb294147684a4c66d642b9e2e42ac8366",
+      "bytes": 475,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/figures/synthetic_logmel.npz",
+      "sha256": "940752a591b1591faecdf6ce5cc8bc9890f3b952856859e5afe15992b22c5ba8",
+      "bytes": 386253,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/figures/synthetic_logmel_provenance.json",
+      "sha256": "0c044a82ff4a282ae66c416557732d4846c7e659dcffc19eb5816342baffb83e",
+      "bytes": 830,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/figures/synthetic_logmel_render.json",
+      "sha256": "ab72f38c860580b2a8af62419742a1a6bae814a02bf6c8b0f8a53ae55477b6c6",
+      "bytes": 325162,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/figures/synthetic_mel.py",
+      "sha256": "1e6a5c241aee16a27aff79dc09195fa7d3385030397ce757ca141b49a4fbf370",
+      "bytes": 4441,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/figures/vector_canvas.py",
+      "sha256": "d1363c01a58cb1e05ee96cd34a3a9d648127da76548e4707d3e868c7dad527e2",
+      "bytes": 3802,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "paper/ICASSP2027_submission_final.pdf",
+      "sha256": "7205fcf3acb70d9560d6d5d7ef8566a8c8350abe40a0ebcdc6c19ec1b75b88ab",
+      "bytes": 399349,
+      "operation": "byte-identical copy"
+    },
+    {
+      "path": "reproduction/source/fixed_bank_mwer.py",
+      "sha256": "a923e8fbba3e351077fad8179c2157935edb2b578786a56173ad8a1fe823f06d",
+      "bytes": 6123,
+      "operation": "Byte-identical standalone historical MWER solver"
+    }
+  ],
+  "not_bundled": [
+    "restricted corpus content",
+    "weights",
+    "private caches",
+    "internal author/reviewer correspondence",
+    "historical control-plane/lease records",
+    "unrelated RESET, BASIC or unfinished full-audio experiments"
+  ]
+}

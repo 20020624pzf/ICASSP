@@ -1,0 +1,34 @@
+{
+  "source_manifest": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/state/private/TRAIN_CAL_MANIFEST.json",
+  "source_manifest_sha256": "09343a80419334422ef3e5defed6815ac73fb96f7d6dbdf677ec09eae39e73c9",
+  "grouping": "within-language existing text identifiers (cal_split field)",
+  "per_language": {
+    "ar": {
+      "FIT": 211,
+      "CHECK": 45
+    },
+    "fa": {
+      "FIT": 208,
+      "CHECK": 49
+    },
+    "it": {
+      "FIT": 187,
+      "CHECK": 69
+    },
+    "pl": {
+      "FIT": 203,
+      "CHECK": 53
+    },
+    "tr": {
+      "FIT": 207,
+      "CHECK": 49
+    }
+  },
+  "totals": {
+    "recordings": 1281,
+    "FIT": 1016,
+    "CHECK": 265,
+    "text_groups": 677
+  },
+  "scope": "Partitioning metadata only.  The identifiers are grouping proxies; source-sentence and speaker clusters were not verified."
+}

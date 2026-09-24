@@ -1,0 +1,557 @@
+{
+  "models": {
+    "Conf": {
+      "scale": [
+        0.03777399459870658,
+        0.34076525405294594,
+        0.09565673185074158,
+        0.05514452887871585,
+        0.02362031603492984,
+        0.036280987019904246,
+        0.12459178700889921,
+        0.7888100143101132
+      ],
+      "coef": [
+        -0.029832495446670118,
+        0.22804885419382653,
+        0.5847325983921068,
+        -0.47291467028952505,
+        -1.0726761638090376,
+        -0.8638298747409315,
+        -1.6231864256776423,
+        -0.15963097199214182
+      ],
+      "feature_names": [
+        "mean_clean_logp",
+        "candidate_probability",
+        "log1p_body_tokens",
+        "log1p_normalized_words",
+        "repeated_4gram_ratio",
+        "cap",
+        "MBR_risk",
+        "local_clean_logp"
+      ],
+      "dimensions": 8,
+      "family": "Conf",
+      "fit_subset": "ORIGINAL_FULL"
+    },
+    "Global": {
+      "scale": [
+        0.03777399459870658,
+        0.34076525405294594,
+        0.09565673185074158,
+        0.05514452887871585,
+        0.02362031603492984,
+        0.036280987019904246,
+        0.12459178700889921,
+        0.7888100143101132,
+        0.198017144169991
+      ],
+      "coef": [
+        -0.003734740363155488,
+        0.248315190805009,
+        0.4148308897654523,
+        -0.4999591357655379,
+        -1.1435233502298534,
+        -0.9123547828303505,
+        -1.4972174217069585,
+        -0.15852248608693603,
+        -0.254359313264272
+      ],
+      "feature_names": [
+        "mean_clean_logp",
+        "candidate_probability",
+        "log1p_body_tokens",
+        "log1p_normalized_words",
+        "repeated_4gram_ratio",
+        "cap",
+        "MBR_risk",
+        "local_clean_logp",
+        "global_audio"
+      ],
+      "dimensions": 9,
+      "family": "Global",
+      "fit_subset": "ORIGINAL_FULL"
+    },
+    "Text": {
+      "scale": [
+        0.03777399459870658,
+        0.34076525405294594,
+        0.09565673185074158,
+        0.05514452887871585,
+        0.02362031603492984,
+        0.036280987019904246,
+        0.12459178700889921,
+        0.7888100143101132,
+        0.5933678464986687
+      ],
+      "coef": [
+        -0.21677795414149992,
+        0.1493648785363942,
+        0.5210809752511416,
+        -0.5054241515843747,
+        -1.154141813231508,
+        -0.8412476762131396,
+        -1.531423334112724,
+        -0.10771357826404608,
+        0.5678714071987416
+      ],
+      "feature_names": [
+        "mean_clean_logp",
+        "candidate_probability",
+        "log1p_body_tokens",
+        "log1p_normalized_words",
+        "repeated_4gram_ratio",
+        "cap",
+        "MBR_risk",
+        "local_clean_logp",
+        "relative_mean_PLL"
+      ],
+      "dimensions": 9,
+      "family": "Text",
+      "fit_subset": "ORIGINAL_FULL"
+    },
+    "Text+Global": {
+      "scale": [
+        0.03777399459870658,
+        0.34076525405294594,
+        0.09565673185074158,
+        0.05514452887871585,
+        0.02362031603492984,
+        0.036280987019904246,
+        0.12459178700889921,
+        0.7888100143101132,
+        0.5933678464986687,
+        0.198017144169991
+      ],
+      "coef": [
+        -0.20184831809506726,
+        0.15895594275312686,
+        0.4624599565312417,
+        -0.5140812786861688,
+        -1.176931886187247,
+        -0.859217885147206,
+        -1.4893028010828768,
+        -0.10888232719367921,
+        0.5507675053709007,
+        -0.09063149249072777
+      ],
+      "feature_names": [
+        "mean_clean_logp",
+        "candidate_probability",
+        "log1p_body_tokens",
+        "log1p_normalized_words",
+        "repeated_4gram_ratio",
+        "cap",
+        "MBR_risk",
+        "local_clean_logp",
+        "relative_mean_PLL",
+        "relative_global_contrast"
+      ],
+      "dimensions": 10,
+      "family": "Text+Global",
+      "fit_subset": "ORIGINAL_FULL"
+    },
+    "ConfDupClean": {
+      "scale": [
+        0.03777399459870658,
+        0.34076525405294594,
+        0.09565673185074158,
+        0.05514452887871585,
+        0.02362031603492984,
+        0.036280987019904246,
+        0.12459178700889921,
+        0.7888100143101132,
+        0.03777399459870658
+      ],
+      "coef": [
+        -0.015284336724387622,
+        0.2284420617075139,
+        0.5849785444770061,
+        -0.4728683067805121,
+        -1.0723524904367925,
+        -0.8637521911092697,
+        -1.623643634430215,
+        -0.15951905469127484,
+        -0.015284336724418621
+      ],
+      "feature_names": [
+        "mean_clean_logp",
+        "candidate_probability",
+        "log1p_body_tokens",
+        "log1p_normalized_words",
+        "repeated_4gram_ratio",
+        "cap",
+        "MBR_risk",
+        "local_clean_logp",
+        "duplicate_relative_clean_mean"
+      ],
+      "family": "ConfDupClean",
+      "fit_subset": "FULL"
+    },
+    "ConfPerm": {
+      "scale": [
+        0.03777399459870658,
+        0.34076525405294594,
+        0.09565673185074158,
+        0.05514452887871585,
+        0.02362031603492984,
+        0.036280987019904246,
+        0.12459178700889921,
+        0.7888100143101132,
+        0.20704243316939172
+      ],
+      "coef": [
+        -0.049875679004948555,
+        0.24702536769648623,
+        0.4144229200690253,
+        -0.5000469285057529,
+        -1.1443938958669655,
+        -0.9124948689149984,
+        -1.4960442787827786,
+        -0.15887942567872,
+        0.2653716746534092
+      ],
+      "feature_names": [
+        "mean_clean_logp",
+        "candidate_probability",
+        "log1p_body_tokens",
+        "log1p_normalized_words",
+        "repeated_4gram_ratio",
+        "cap",
+        "MBR_risk",
+        "local_clean_logp",
+        "relative_permuted_mean"
+      ],
+      "family": "ConfPerm",
+      "fit_subset": "FULL"
+    },
+    "A_Conf": {
+      "scale": [
+        0.03665975594657572,
+        0.3386989776375437,
+        0.06431031520152167,
+        0.06545430148401406,
+        0.03266635495861572,
+        0.028320148607810132,
+        0.16226992183932626,
+        0.7642102568472565
+      ],
+      "coef": [
+        0.034169516647181056,
+        0.12561578966375983,
+        0.33605905277807757,
+        -0.7636852468097889,
+        -0.6769202307591503,
+        -0.9075804577519679,
+        -2.615991451087184,
+        -0.22793417867605742
+      ],
+      "feature_names": [
+        "mean_clean_logp",
+        "candidate_probability",
+        "log1p_body_tokens",
+        "log1p_normalized_words",
+        "repeated_4gram_ratio",
+        "cap",
+        "MBR_risk",
+        "local_clean_logp"
+      ],
+      "family": "Conf",
+      "fit_subset": "A"
+    },
+    "A_Global": {
+      "scale": [
+        0.03665975594657572,
+        0.3386989776375437,
+        0.06431031520152167,
+        0.06545430148401406,
+        0.03266635495861572,
+        0.028320148607810132,
+        0.16226992183932626,
+        0.7642102568472565,
+        0.17316500784712127
+      ],
+      "coef": [
+        0.042434086185246765,
+        0.14719102802498682,
+        0.12345708975803492,
+        -0.7791238244747287,
+        -0.7071953616074177,
+        -0.991774616077868,
+        -2.430595427980194,
+        -0.2122105361991135,
+        -0.26276753683775855
+      ],
+      "feature_names": [
+        "mean_clean_logp",
+        "candidate_probability",
+        "log1p_body_tokens",
+        "log1p_normalized_words",
+        "repeated_4gram_ratio",
+        "cap",
+        "MBR_risk",
+        "local_clean_logp",
+        "global_audio"
+      ],
+      "family": "Global",
+      "fit_subset": "A"
+    },
+    "A_Text": {
+      "scale": [
+        0.03665975594657572,
+        0.3386989776375437,
+        0.06431031520152167,
+        0.06545430148401406,
+        0.03266635495861572,
+        0.028320148607810132,
+        0.16226992183932626,
+        0.7642102568472565,
+        0.5784922479687551
+      ],
+      "coef": [
+        -0.15007930821446142,
+        0.02833470189591992,
+        0.2436853148789716,
+        -0.7315870001032142,
+        -0.7353766085893854,
+        -0.9122378075436061,
+        -2.558647046331082,
+        -0.18433416072179543,
+        0.5403125602363541
+      ],
+      "feature_names": [
+        "mean_clean_logp",
+        "candidate_probability",
+        "log1p_body_tokens",
+        "log1p_normalized_words",
+        "repeated_4gram_ratio",
+        "cap",
+        "MBR_risk",
+        "local_clean_logp",
+        "relative_mean_PLL"
+      ],
+      "family": "Text",
+      "fit_subset": "A"
+    },
+    "A_Text+Global": {
+      "scale": [
+        0.03665975594657572,
+        0.3386989776375437,
+        0.06431031520152167,
+        0.06545430148401406,
+        0.03266635495861572,
+        0.028320148607810132,
+        0.16226992183932626,
+        0.7642102568472565,
+        0.5784922479687551,
+        0.17316500784712127
+      ],
+      "coef": [
+        -0.13644559952432875,
+        0.04410598878962428,
+        0.142563041029069,
+        -0.7409347330788136,
+        -0.7474366610419857,
+        -0.9539330549867632,
+        -2.4692662167345847,
+        -0.17875458598465832,
+        0.5124030661765485,
+        -0.13088048266331734
+      ],
+      "feature_names": [
+        "mean_clean_logp",
+        "candidate_probability",
+        "log1p_body_tokens",
+        "log1p_normalized_words",
+        "repeated_4gram_ratio",
+        "cap",
+        "MBR_risk",
+        "local_clean_logp",
+        "relative_mean_PLL",
+        "relative_global_contrast"
+      ],
+      "family": "Text+Global",
+      "fit_subset": "A"
+    },
+    "B_Conf": {
+      "scale": [
+        0.038785810683846726,
+        0.34364200163044417,
+        0.12217502768393645,
+        0.041287882761564296,
+        1.0,
+        0.044125933136431844,
+        0.05977984903147706,
+        0.8146807679069362
+      ],
+      "coef": [
+        0.09358876937737823,
+        0.4758123146191066,
+        0.10128200884685283,
+        -0.004641982371514921,
+        0.0,
+        -0.4106102602381662,
+        -0.11570167897742147,
+        -0.09112215049943931
+      ],
+      "feature_names": [
+        "mean_clean_logp",
+        "candidate_probability",
+        "log1p_body_tokens",
+        "log1p_normalized_words",
+        "repeated_4gram_ratio",
+        "cap",
+        "MBR_risk",
+        "local_clean_logp"
+      ],
+      "family": "Conf",
+      "fit_subset": "B"
+    },
+    "B_Global": {
+      "scale": [
+        0.038785810683846726,
+        0.34364200163044417,
+        0.12217502768393645,
+        0.041287882761564296,
+        1.0,
+        0.044125933136431844,
+        0.05977984903147706,
+        0.8146807679069362,
+        0.22376590714497144
+      ],
+      "coef": [
+        0.14713810201963237,
+        0.47528184450531674,
+        -0.2701256965275698,
+        -0.009067337458931343,
+        0.0,
+        -0.35998602470216967,
+        -0.037215527045788274,
+        -0.07933799542357267,
+        -0.34675975666027997
+      ],
+      "feature_names": [
+        "mean_clean_logp",
+        "candidate_probability",
+        "log1p_body_tokens",
+        "log1p_normalized_words",
+        "repeated_4gram_ratio",
+        "cap",
+        "MBR_risk",
+        "local_clean_logp",
+        "global_audio"
+      ],
+      "family": "Global",
+      "fit_subset": "B"
+    },
+    "B_Text": {
+      "scale": [
+        0.038785810683846726,
+        0.34364200163044417,
+        0.12217502768393645,
+        0.041287882761564296,
+        1.0,
+        0.044125933136431844,
+        0.05977984903147706,
+        0.8146807679069362,
+        0.6073390560619532
+      ],
+      "coef": [
+        -0.09546568997602976,
+        0.419227270167198,
+        0.01638309846307827,
+        -0.0676359046794137,
+        0.0,
+        -0.4274216738490819,
+        -0.017845814063160433,
+        -0.02146132663309316,
+        0.6175885991721486
+      ],
+      "feature_names": [
+        "mean_clean_logp",
+        "candidate_probability",
+        "log1p_body_tokens",
+        "log1p_normalized_words",
+        "repeated_4gram_ratio",
+        "cap",
+        "MBR_risk",
+        "local_clean_logp",
+        "relative_mean_PLL"
+      ],
+      "family": "Text",
+      "fit_subset": "B"
+    },
+    "B_Text+Global": {
+      "scale": [
+        0.038785810683846726,
+        0.34364200163044417,
+        0.12217502768393645,
+        0.041287882761564296,
+        1.0,
+        0.044125933136431844,
+        0.05977984903147706,
+        0.8146807679069362,
+        0.6073390560619532,
+        0.22376590714497144
+      ],
+      "coef": [
+        -0.06661632292149197,
+        0.42114694861313023,
+        -0.13103752932001883,
+        -0.06705399836479725,
+        0.0,
+        -0.40625686523113086,
+        0.010292234452331085,
+        -0.01931041163125734,
+        0.5942885551119995,
+        -0.14062772133760995
+      ],
+      "feature_names": [
+        "mean_clean_logp",
+        "candidate_probability",
+        "log1p_body_tokens",
+        "log1p_normalized_words",
+        "repeated_4gram_ratio",
+        "cap",
+        "MBR_risk",
+        "local_clean_logp",
+        "relative_mean_PLL",
+        "relative_global_contrast"
+      ],
+      "family": "Text+Global",
+      "fit_subset": "B"
+    }
+  },
+  "new_fits": 10,
+  "baseline_consistency_recomputations": {
+    "Conf": {
+      "max_coef_abs_diff": 0.0,
+      "purpose": "baseline consistency only; inherited model retained"
+    },
+    "Global": {
+      "max_coef_abs_diff": 0.0,
+      "purpose": "baseline consistency only; inherited model retained"
+    },
+    "Text": {
+      "max_coef_abs_diff": 0.0,
+      "purpose": "baseline consistency only; inherited model retained"
+    },
+    "Text+Global": {
+      "max_coef_abs_diff": 0.0,
+      "purpose": "baseline consistency only; inherited model retained"
+    }
+  },
+  "fit_source": {
+    "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/state/merged/TRAIN_CAL_101_features.jsonl",
+    "sha256": "4589ffc291349205bdf207f762b644a065145405dd86852886650b597f8c3657",
+    "bytes": 20719114
+  },
+  "fit_references": {
+    "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/state/private/TRAIN_CAL_REFERENCES.jsonl",
+    "sha256": "aa4aa40f8b63c8d6bce03be712477fd674937c56dab050c8e1e8d0622e978599",
+    "bytes": 353312
+  },
+  "CPU_seconds": 11.539245781488717,
+  "post_exposure": true
+}

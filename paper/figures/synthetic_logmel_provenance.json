@@ -1,0 +1,28 @@
+{
+  "kind": "Actual log-mel transform of a synthetic nonlinguistic signal; illustration only",
+  "corpus_audio_used": false,
+  "ASR_inference_or_evaluation": false,
+  "sample_rate_hz": 16000,
+  "duration_seconds": 1.6,
+  "n_fft": 400,
+  "hop_samples": 160,
+  "n_mels": 80,
+  "frames": 160,
+  "mel_filter": "Slaney scale and area normalization",
+  "window": "Periodic Hann; reflect-centered STFT; last frame removed",
+  "display": "Purple-to-gold sequential palette; identical fixed eight-decade log-power range for both views",
+  "block_frames": 20,
+  "permutation_identity": "F7_AUDIO_BLOCKS_V1|synthetic|figure1",
+  "permuted_order_zero_based": [
+    4,
+    6,
+    3,
+    5,
+    0,
+    7,
+    1,
+    2
+  ],
+  "exact_block_reuse": true,
+  "array_file_sha256": "940752a591b1591faecdf6ce5cc8bc9890f3b952856859e5afe15992b22c5ba8"
+}

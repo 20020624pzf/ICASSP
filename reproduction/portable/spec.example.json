@@ -1,0 +1,7 @@
+{
+  "split": "TRAIN_CAL",
+  "seed": 101,
+  "features": {"path": "authorized/TRAIN_CAL_101_features.jsonl", "sha256": "REPLACE_WITH_ACTUAL_CONTENT_SHA256"},
+  "references": {"path": "authorized/TRAIN_CAL_REFERENCES.jsonl", "sha256": "REPLACE_WITH_ACTUAL_CONTENT_SHA256"},
+  "pll_cache": "authorized/texts.sqlite"
+}

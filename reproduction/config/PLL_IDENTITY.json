@@ -1,0 +1,20 @@
+{
+  "model": "FacebookAI/xlm-roberta-base",
+  "model_revision": "e73636d4f797dec63c3081bb6ed5c7b0bb3f2089",
+  "tokenizer_revision": "e73636d4f797dec63c3081bb6ed5c7b0bb3f2089",
+  "window": "start=max(0,min(target_index-255,n-510)); each target exactly once",
+  "max_body_tokens": 510,
+  "dtype": "bfloat16 encoder; float32 MLM head/log_softmax; float64 sum/mean",
+  "implementation": {
+    "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/integrated_review_revision_20260922/scripts/pll.py",
+    "bytes": 3083,
+    "sha256": "4f68819bf866d02887d9413a53683c9f0fbb76062bcfa18fd8e3de8b80233429"
+  },
+  "protocol": {
+    "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/integrated_review_revision_20260922/evidence/FROZEN_PROTOCOL.json",
+    "bytes": 3844,
+    "sha256": "7fa43409c6772edc497f605a20a94800e9a5907ff0964e66cba6d18632cee5e7"
+  },
+  "technical_sample_count": 64,
+  "technical_sampling": "lowest SHA exact-text identities from TRAIN candidates only"
+}

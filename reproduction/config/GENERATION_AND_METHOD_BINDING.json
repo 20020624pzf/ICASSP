@@ -1,0 +1,525 @@
+{
+  "status": "PASS",
+  "scope": "Read-only existing code/config and identity metadata; no inference, fitting or evaluation",
+  "inherited_effective_config": {
+    "ar": {
+      "length_penalty": 1.0,
+      "repetition_penalty": 1.0,
+      "num_beams": 5,
+      "num_return_sequences": 1,
+      "max_new_tokens": 444,
+      "do_sample": false,
+      "early_stopping": false
+    },
+    "fa": {
+      "length_penalty": 1.0,
+      "repetition_penalty": 1.0,
+      "num_beams": 5,
+      "num_return_sequences": 1,
+      "max_new_tokens": 444,
+      "do_sample": false,
+      "early_stopping": false
+    },
+    "pl": {
+      "length_penalty": 1.0,
+      "repetition_penalty": 1.0,
+      "num_beams": 5,
+      "num_return_sequences": 1,
+      "max_new_tokens": 444,
+      "do_sample": false,
+      "early_stopping": false
+    },
+    "tr": {
+      "length_penalty": 1.0,
+      "repetition_penalty": 1.0,
+      "num_beams": 5,
+      "num_return_sequences": 1,
+      "max_new_tokens": 444,
+      "do_sample": false,
+      "early_stopping": false
+    },
+    "it": {
+      "length_penalty": 1.0,
+      "repetition_penalty": 1.0,
+      "num_beams": 5,
+      "num_return_sequences": 1,
+      "max_new_tokens": 444,
+      "do_sample": false,
+      "early_stopping": false
+    }
+  },
+  "candidate_generation_overrides": {
+    "num_beams": 5,
+    "num_return_sequences": 5,
+    "do_sample": false,
+    "max_new_tokens": 444
+  },
+  "length_penalty": 1.0,
+  "transformers_installed_version": "4.57.6",
+  "beam_score_formula": "topk_log_probs = topk_log_probs / ((cur_len + 1 - decoder_prompt_len) ** length_penalty)",
+  "interpretation": "Exponent 1.0 applies length normalization; it is not the zero-exponent/no-normalization setting.",
+  "candidate_probability": "Temperature-one softmax of summed clean body-token log scores",
+  "MBR": "Sum over pseudo-reference candidate j of p_j * edit_distance(j,k) / max(1,word_count(j))",
+  "ridge": "Sample weights normalized to sum to one before weighted RMS and penalty=.01 solve",
+  "sources": [
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup6_beam_control_20260921/runs/F6-TECH-TRAIN_dev_attempt0/EFFECTIVE_GENERATION.json",
+      "sha256": "fb354075ee456c70bbe2d5f242f640228d51fc07d266a966d84be487c1b04c68"
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/scripts/audio_core.py",
+      "sha256": "e78d87639aae07e541bf0a752811bbb8ae566885c81d752cde80ca57389257c8"
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/scripts/audio_core.py",
+      "sha256": "e78d87639aae07e541bf0a752811bbb8ae566885c81d752cde80ca57389257c8"
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/inputs/risk_selector.py",
+      "sha256": "cd8437790c7d2853a48f1f71929c64a49a64c7a84e50f17d652c7b7a143ea39c"
+    },
+    {
+      "path": "/home/mhmt_stu/Code/.venv/lib/python3.10/site-packages/transformers/generation/utils.py",
+      "sha256": "55fd5c50aa785e226afa03e4507b8d27c0328714c0bd048bc60af9e8813a1173"
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/integrated_review_revision_20260922/scripts/cost_worker.py",
+      "sha256": "f4d8de30792f3ca9063208e4b3c1df2b1b5b214ede1d7d78b77a4e5450bbf2e0"
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/integrated_review_revision_20260922/scripts/cost_worker_parallel.py",
+      "sha256": "27ae441f6f6a79b5e96109c8de2ba8747543bd5419019dbf9d06a40f68c8e469"
+    }
+  ],
+  "N5_identity_bindings": [
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/runs/F7-CAL-N5-part0_attempt0/IDENTITY.json",
+      "sha256": "b0d55d36e6b5511cf386638a9136479978f07fac8064c0054ad8d40c7f116c86",
+      "seed": 101,
+      "split": "TRAIN_CAL",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/runs/F7-CAL-N5-part0_attempt1/IDENTITY.json",
+      "sha256": "b0d55d36e6b5511cf386638a9136479978f07fac8064c0054ad8d40c7f116c86",
+      "seed": 101,
+      "split": "TRAIN_CAL",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/runs/F7-CAL-N5-part1_attempt0/IDENTITY.json",
+      "sha256": "c7321d3fe9893ea10e130ebaf2a142109e56ba96d9ab49818891d7adc516b231",
+      "seed": 101,
+      "split": "TRAIN_CAL",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/runs/F7-CAL-N5-part1_attempt1/IDENTITY.json",
+      "sha256": "c7321d3fe9893ea10e130ebaf2a142109e56ba96d9ab49818891d7adc516b231",
+      "seed": 101,
+      "split": "TRAIN_CAL",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/runs/F7-R0-101-CV27-N5-part0_attempt0/IDENTITY.json",
+      "sha256": "e0d2a78cbc80ddb38e40e9bd41517a75e096bf4097e7dccef97d7bf24432672b",
+      "seed": 101,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/runs/F7-R0-101-CV27-N5-part1_attempt0/IDENTITY.json",
+      "sha256": "05e764f5f579e8a1a12520b62c682e5ec39323b8348d0122db8bb95af885a8f0",
+      "seed": 101,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/runs/F7-R0-101-CV27-N5-part2_attempt0/IDENTITY.json",
+      "sha256": "e8e8c34fd68cf7271a3cbaebd1271d12b15ad866ca4de8575af800b83d8359bf",
+      "seed": 101,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/runs/F7-R0-101-CV27-N5-part2_attempt1/IDENTITY.json",
+      "sha256": "e8e8c34fd68cf7271a3cbaebd1271d12b15ad866ca4de8575af800b83d8359bf",
+      "seed": 101,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/runs/F7-R0-101-CV27-N5-part3_attempt0/IDENTITY.json",
+      "sha256": "4476ed9233d2803e48e26de2e644694b8b751538c4be58934233ebf9ef7da771",
+      "seed": 101,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/runs/F7-R0-101-CV27-N5-part3_attempt1/IDENTITY.json",
+      "sha256": "4476ed9233d2803e48e26de2e644694b8b751538c4be58934233ebf9ef7da771",
+      "seed": 101,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/runs/F7-R0-101-CV27-N5-part4_attempt0/IDENTITY.json",
+      "sha256": "f3b30f00d867af8038e31c743540dae93ca62a53e1e2527d16bcbf7252c35931",
+      "seed": 101,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/runs/F7-R0-101-CV27-N5-part4_attempt1/IDENTITY.json",
+      "sha256": "f3b30f00d867af8038e31c743540dae93ca62a53e1e2527d16bcbf7252c35931",
+      "seed": 101,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/runs/F7-R0-101-CV27-N5-part5_attempt0/IDENTITY.json",
+      "sha256": "0e3cf313d6ffb4e011f9eda11a40e7d51f7ce2bf04d91b5070118a77b10c807f",
+      "seed": 101,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/runs/F7-R0-101-CV27-N5-part6_attempt0/IDENTITY.json",
+      "sha256": "fadcf78c89ede04e6659eb324e83dbac2efc413ab3f06a5b543d7434f7cbee3c",
+      "seed": 101,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/runs/F7-R0-101-CV27-N5-part6_attempt1/IDENTITY.json",
+      "sha256": "fadcf78c89ede04e6659eb324e83dbac2efc413ab3f06a5b543d7434f7cbee3c",
+      "seed": 101,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/runs/F7-R0-101-CV27-N5-part7_attempt0/IDENTITY.json",
+      "sha256": "b1b1523480b83bc68176b1b9508629f1fe50ae3d8253d786ac32a886ae9dbb19",
+      "seed": 101,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/runs/F7-R0-101-CV27-N5-part7_attempt1/IDENTITY.json",
+      "sha256": "b1b1523480b83bc68176b1b9508629f1fe50ae3d8253d786ac32a886ae9dbb19",
+      "seed": 101,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/runs/F7-R0-101-DEV-N5-part0_attempt0/IDENTITY.json",
+      "sha256": "a26648097cbb0ff40c8156b0af6e6095c4b7c64e76a9373e9e0fa6372df16d56",
+      "seed": 101,
+      "split": "DEV",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/runs/F7-R0-101-DEV-N5-part1_attempt0/IDENTITY.json",
+      "sha256": "dd0cc2ea9e5675182d1d561a5d653b6ab1300f4c9a7ed1f042c5ee4200843691",
+      "seed": 101,
+      "split": "DEV",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/runs/F7-R0-101-TEST-N5-part0_attempt0/IDENTITY.json",
+      "sha256": "914995978c50f23d9cc2901f7852ba7f15e8a87633741dd9597290ceacb5d650",
+      "seed": 101,
+      "split": "TEST",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/runs/F7-R0-101-TEST-N5-part1_attempt0/IDENTITY.json",
+      "sha256": "58c6cdc3614ead295f8d1228652028c5c9527094368f794c167d8d42552e33a6",
+      "seed": 101,
+      "split": "TEST",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/runs/F7-R0-202-DEV-N5-part0_attempt0/IDENTITY.json",
+      "sha256": "f6aa485e0d4f8b189effb25d050e8ad3af529bc47d786b5310641ecf363687c5",
+      "seed": 202,
+      "split": "DEV",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/runs/F7-R0-202-DEV-N5-part1_attempt0/IDENTITY.json",
+      "sha256": "4f1268fb837727e1630314a16424f191d47b32abbd6e09c3018fcdf7a2d7f2fc",
+      "seed": 202,
+      "split": "DEV",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/runs/F7-R0-202-TEST-N5-part0_attempt0/IDENTITY.json",
+      "sha256": "1678295f6b5e89de0db59d974bc6bc3839874be7045543a27d79b103894e167f",
+      "seed": 202,
+      "split": "TEST",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/runs/F7-R0-202-TEST-N5-part1_attempt0/IDENTITY.json",
+      "sha256": "f56a3fbd6cc4a2a32676d4995437d1bb98c05f0dd99ee278ebb4fe9b75c6a6e0",
+      "seed": 202,
+      "split": "TEST",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/runs/F7-R0-303-DEV-N5-part0_attempt0/IDENTITY.json",
+      "sha256": "51d0e143d871ffc8bb441fdc786bb1f67e23ccc8f01b17bb02b77483849f0db2",
+      "seed": 303,
+      "split": "DEV",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/runs/F7-R0-303-DEV-N5-part1_attempt0/IDENTITY.json",
+      "sha256": "130def8a91ffe38ed10c2524801f6e618133165b3c952a9be90fc96459a2a945",
+      "seed": 303,
+      "split": "DEV",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/runs/F7-R0-303-TEST-N5-part0_attempt0/IDENTITY.json",
+      "sha256": "87aadcbc64566f1fb1fd52e7050c2b2eba6c171788b7f8bc0c9e4ead49f1008b",
+      "seed": 303,
+      "split": "TEST",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/runs/F7-R0-303-TEST-N5-part1_attempt0/IDENTITY.json",
+      "sha256": "98d68d8a0f5d65b40f22a8fa6ec55ae999d8e4b02f0006497f9ab467fc1ab1e7",
+      "seed": 303,
+      "split": "TEST",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV202-N5-part00_attempt0/IDENTITY.json",
+      "sha256": "9c05dbc2f223a331a0560bb55f7895d846edb0f79dc3ff082dfd666ef87bd6b4",
+      "seed": 202,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV202-N5-part01_attempt0/IDENTITY.json",
+      "sha256": "b651265994ace2c5e0758c533e55c6916486a06cfa60e0d6a67aac9bc11123c1",
+      "seed": 202,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV202-N5-part02_attempt0/IDENTITY.json",
+      "sha256": "186f442cf389e52e5f43d5e1bd99893652a97ce2798a9cea0f077feebe9db9c9",
+      "seed": 202,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV202-N5-part03_attempt0/IDENTITY.json",
+      "sha256": "55f5e7827e7750674b4ef4b574b6d8bde52a5abcc2a82fc2febafb120b9a7d98",
+      "seed": 202,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV202-N5-part04_attempt0/IDENTITY.json",
+      "sha256": "b10ecf4fba756f4213c8f2418b452104deb1b2160acfea6758681a45a83d2c24",
+      "seed": 202,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV202-N5-part05_attempt0/IDENTITY.json",
+      "sha256": "e6465c32274391f828c872821be5fdf32fa67fcfef5412ae675aecc4c746ab2b",
+      "seed": 202,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV202-N5-part06_attempt0/IDENTITY.json",
+      "sha256": "c43133cad7db876686f4d1e64bbc4454e532ac2ae21142438b90e65c7b554955",
+      "seed": 202,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV202-N5-part07_attempt0/IDENTITY.json",
+      "sha256": "bbca20c55b0683c0bca84957741a5079cb5a5bbcc7669a8e5f243a7f63d81925",
+      "seed": 202,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV202-N5-part08_attempt0/IDENTITY.json",
+      "sha256": "1516a3dc9895fc2ebeee7dbcbda77515f500d0f64766861f791707cb36e26747",
+      "seed": 202,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV202-N5-part09_attempt0/IDENTITY.json",
+      "sha256": "0918c7a975d34a8ef9d1a833fcab9469947449e0b2d2648c9c408ba68682fbcc",
+      "seed": 202,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV202-N5-part10_attempt0/IDENTITY.json",
+      "sha256": "1714e6471fa6964f3e39147ef9da47eae21c98e8ed468137a493755cc3a2abb6",
+      "seed": 202,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV202-N5-part11_attempt0/IDENTITY.json",
+      "sha256": "2e4864e2427f769700f55b3e764e4242e378f9e3ea95878355b38d99a659f7a6",
+      "seed": 202,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV202-N5-part12_attempt0/IDENTITY.json",
+      "sha256": "5b116f089ef58d1b9f028e24993fbae91b9f931c45dd9a033f4f072a5de47af4",
+      "seed": 202,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV202-N5-part13_attempt0/IDENTITY.json",
+      "sha256": "2a6a1fdf82d2fba8a945daa05dfe668dd51840ee62b1b3aad5eb976c10ec32ea",
+      "seed": 202,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV202-N5-part14_attempt0/IDENTITY.json",
+      "sha256": "3b388080d4e2d8b360d448e3cf685f3312145fec83ea80c3447c314acf6515c7",
+      "seed": 202,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV202-N5-part15_attempt0/IDENTITY.json",
+      "sha256": "41717b00ae1b5cb17b76015912338396b26b25d53b3a01f5eabe49ff30c03ece",
+      "seed": 202,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV303-N5-part00_attempt0/IDENTITY.json",
+      "sha256": "561f305cb974692f80ae4d0684797f49a17b4b203cf9a3025e5f5362f2e5aa36",
+      "seed": 303,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV303-N5-part01_attempt0/IDENTITY.json",
+      "sha256": "1f086c8fcef34030fbc21a903ca3eeb19a2ba2abce15262cd9d1d42593ddb3a4",
+      "seed": 303,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV303-N5-part02_attempt0/IDENTITY.json",
+      "sha256": "ee91a910d476660db84c671724bf93f80a7711d958b38357647cbf9fd4cb1766",
+      "seed": 303,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV303-N5-part03_attempt0/IDENTITY.json",
+      "sha256": "b16c42501c72f7db275323f065345773c5ffaa10e2f79d11ed65d68050fb8b42",
+      "seed": 303,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV303-N5-part04_attempt0/IDENTITY.json",
+      "sha256": "79f6f4f8db281b4b9daa17b1941b7060d93de3b6528e39f25acfec598e6dddfe",
+      "seed": 303,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV303-N5-part05_attempt0/IDENTITY.json",
+      "sha256": "aa3872c93de953ceb34562a9eb35b9f4d12ba6c11d7753d2307c727241fb6ca6",
+      "seed": 303,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV303-N5-part06_attempt0/IDENTITY.json",
+      "sha256": "f8cb683f15777655a77b2aa32bb494d221d1ed8dd057bde2bb2ff6c4836c3d4c",
+      "seed": 303,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV303-N5-part07_attempt0/IDENTITY.json",
+      "sha256": "737bd17e52280bc2dcc763d715ec32a985b22108146e41579802ea9a8d87908d",
+      "seed": 303,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV303-N5-part08_attempt0/IDENTITY.json",
+      "sha256": "5895951e4e89804b5a966d98de31b9b9d600db4a78ec5f5d4787f8481a969513",
+      "seed": 303,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV303-N5-part09_attempt0/IDENTITY.json",
+      "sha256": "e6b6847c02d1787eb66b750b25073d147f7836821092683d609cc53bb6f97997",
+      "seed": 303,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV303-N5-part10_attempt0/IDENTITY.json",
+      "sha256": "2634dcf5ee324fa7b4e7d56036395efcfa8f8b31984bc1174d3ae6cdb3d74f4a",
+      "seed": 303,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV303-N5-part11_attempt0/IDENTITY.json",
+      "sha256": "c5551e4a000700c3964b7e25f853cfaf5ebb2a52a79829300c2a569fa3ca4dcb",
+      "seed": 303,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV303-N5-part12_attempt0/IDENTITY.json",
+      "sha256": "87db1167872af5c9ab9a897cf708c4edb50e63aca6f33979613c843d732597d8",
+      "seed": 303,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV303-N5-part13_attempt0/IDENTITY.json",
+      "sha256": "cebf589ca34507f4c2861c6a07df0e5a8567ac5f4a0fb1aea1c7172f62ad6dc7",
+      "seed": 303,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV303-N5-part14_attempt0/IDENTITY.json",
+      "sha256": "40ddf709ee4cde7c1ebdaa92a9048d8653dbf41fbb053b06d1469f730e1b6913",
+      "seed": 303,
+      "split": "CV27",
+      "source_hash_match": true
+    },
+    {
+      "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup8_fixed_cv_replication_20260922/runs/F8-CV303-N5-part15_attempt0/IDENTITY.json",
+      "sha256": "c198b21fe2a712401ac00456a8b13748b1cf80b9ea45ff886413ab7ac75b6a21",
+      "seed": 303,
+      "split": "CV27",
+      "source_hash_match": true
+    }
+  ],
+  "identity_count": 61,
+  "cost_workers_reuse_same_Engine": true
+}

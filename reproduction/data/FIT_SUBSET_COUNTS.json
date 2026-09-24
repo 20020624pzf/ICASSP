@@ -1,0 +1,95 @@
+{
+  "FULL": {
+    "recordings": 1016,
+    "nonbeam_pairs": 3063,
+    "languages": {
+      "ar": {
+        "recordings": 211,
+        "groups": 127,
+        "reference_words": 3844
+      },
+      "fa": {
+        "recordings": 208,
+        "groups": 95,
+        "reference_words": 4604
+      },
+      "pl": {
+        "recordings": 203,
+        "groups": 101,
+        "reference_words": 3888
+      },
+      "tr": {
+        "recordings": 207,
+        "groups": 118,
+        "reference_words": 3415
+      },
+      "it": {
+        "recordings": 187,
+        "groups": 95,
+        "reference_words": 4396
+      }
+    }
+  },
+  "A": {
+    "recordings": 513,
+    "nonbeam_pairs": 1530,
+    "languages": {
+      "ar": {
+        "recordings": 102,
+        "groups": 64,
+        "reference_words": 1930
+      },
+      "fa": {
+        "recordings": 105,
+        "groups": 48,
+        "reference_words": 2270
+      },
+      "pl": {
+        "recordings": 102,
+        "groups": 51,
+        "reference_words": 1892
+      },
+      "tr": {
+        "recordings": 103,
+        "groups": 59,
+        "reference_words": 1784
+      },
+      "it": {
+        "recordings": 101,
+        "groups": 48,
+        "reference_words": 2353
+      }
+    }
+  },
+  "B": {
+    "recordings": 503,
+    "nonbeam_pairs": 1533,
+    "languages": {
+      "ar": {
+        "recordings": 109,
+        "groups": 63,
+        "reference_words": 1914
+      },
+      "fa": {
+        "recordings": 103,
+        "groups": 47,
+        "reference_words": 2334
+      },
+      "pl": {
+        "recordings": 101,
+        "groups": 50,
+        "reference_words": 1996
+      },
+      "tr": {
+        "recordings": 104,
+        "groups": 59,
+        "reference_words": 1631
+      },
+      "it": {
+        "recordings": 86,
+        "groups": 47,
+        "reference_words": 2043
+      }
+    }
+  }
+}

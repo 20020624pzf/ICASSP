@@ -1,0 +1,205 @@
+{
+  "models": {
+    "Conf": {
+      "scale": [
+        0.03777399459870658,
+        0.34076525405294594,
+        0.09565673185074158,
+        0.05514452887871585,
+        0.02362031603492984,
+        0.036280987019904246,
+        0.12459178700889921,
+        0.7888100143101132
+      ],
+      "coef": [
+        -0.029832495446670118,
+        0.22804885419382653,
+        0.5847325983921068,
+        -0.47291467028952505,
+        -1.0726761638090376,
+        -0.8638298747409315,
+        -1.6231864256776423,
+        -0.15963097199214182
+      ],
+      "feature_names": [
+        "mean_clean_logp",
+        "candidate_probability",
+        "log1p_body_tokens",
+        "log1p_normalized_words",
+        "repeated_4gram_ratio",
+        "cap",
+        "MBR_risk",
+        "local_clean_logp"
+      ],
+      "dimensions": 8
+    },
+    "Global": {
+      "scale": [
+        0.03777399459870658,
+        0.34076525405294594,
+        0.09565673185074158,
+        0.05514452887871585,
+        0.02362031603492984,
+        0.036280987019904246,
+        0.12459178700889921,
+        0.7888100143101132,
+        0.198017144169991
+      ],
+      "coef": [
+        -0.003734740363155488,
+        0.248315190805009,
+        0.4148308897654523,
+        -0.4999591357655379,
+        -1.1435233502298534,
+        -0.9123547828303505,
+        -1.4972174217069585,
+        -0.15852248608693603,
+        -0.254359313264272
+      ],
+      "feature_names": [
+        "mean_clean_logp",
+        "candidate_probability",
+        "log1p_body_tokens",
+        "log1p_normalized_words",
+        "repeated_4gram_ratio",
+        "cap",
+        "MBR_risk",
+        "local_clean_logp",
+        "global_audio"
+      ],
+      "dimensions": 9
+    },
+    "Local": {
+      "scale": [
+        0.03777399459870658,
+        0.34076525405294594,
+        0.09565673185074158,
+        0.05514452887871585,
+        0.02362031603492984,
+        0.036280987019904246,
+        0.12459178700889921,
+        0.7888100143101132,
+        0.198017144169991,
+        2.6254822707132406
+      ],
+      "coef": [
+        -0.013690678077292597,
+        0.22896150408929672,
+        0.4064565604867661,
+        -0.5030509969868395,
+        -1.1424370972622144,
+        -0.9300696163973867,
+        -1.497552072302244,
+        -0.13341274383708934,
+        -0.2981226419848325,
+        0.0658645170520886
+      ],
+      "feature_names": [
+        "mean_clean_logp",
+        "candidate_probability",
+        "log1p_body_tokens",
+        "log1p_normalized_words",
+        "repeated_4gram_ratio",
+        "cap",
+        "MBR_risk",
+        "local_clean_logp",
+        "global_audio",
+        "local_audio"
+      ],
+      "dimensions": 10
+    },
+    "Shuffled": {
+      "scale": [
+        0.03777399459870658,
+        0.34076525405294594,
+        0.09565673185074158,
+        0.05514452887871585,
+        0.02362031603492984,
+        0.036280987019904246,
+        0.12459178700889921,
+        0.7888100143101132,
+        0.17728222219207138,
+        2.6322187048603287
+      ],
+      "coef": [
+        -0.02772688380480627,
+        0.2259745196830407,
+        0.5817525709388176,
+        -0.4721104396811495,
+        -1.0693231102968406,
+        -0.8610792929480692,
+        -1.6235616745009906,
+        -0.16003991688101965,
+        0.011448091015014221,
+        0.002879479699069412
+      ],
+      "feature_names": [
+        "mean_clean_logp",
+        "candidate_probability",
+        "log1p_body_tokens",
+        "log1p_normalized_words",
+        "repeated_4gram_ratio",
+        "cap",
+        "MBR_risk",
+        "local_clean_logp",
+        "global_audio",
+        "local_audio"
+      ],
+      "dimensions": 10
+    }
+  },
+  "fit_CPU_elapsed_seconds": 3.931566103361547,
+  "fit_reference_words": {
+    "ar": 3844,
+    "fa": 4604,
+    "pl": 3888,
+    "tr": 3415,
+    "it": 4396
+  },
+  "fit_recordings": 1016,
+  "FIT_nonbeam_pairs": 3063,
+  "negative_targets": 1611,
+  "zero_targets": 789,
+  "positive_targets": 663,
+  "weight_normalization": 0.2503097008448007,
+  "penalty": 0.01,
+  "intercept": false,
+  "feature_source": {
+    "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/state/merged/TRAIN_CAL_101_features.jsonl",
+    "sha256": "4589ffc291349205bdf207f762b644a065145405dd86852886650b597f8c3657",
+    "bytes": 20719114
+  },
+  "references": {
+    "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/state/private/TRAIN_CAL_REFERENCES.jsonl",
+    "sha256": "aa4aa40f8b63c8d6bce03be712477fd674937c56dab050c8e1e8d0622e978599",
+    "bytes": 353312
+  },
+  "feature_matrix_sha256": "253324e41c2945af87d3b818768d64d67a4baf94b5fabb6d9c70282d71c012cd",
+  "shuffle_seed": 7,
+  "shuffle_strata_counts": {
+    "('ar', 0)": 45,
+    "('ar', 1)": 465,
+    "('ar', 2)": 249,
+    "('fa', 0)": 15,
+    "('fa', 1)": 238,
+    "('fa', 2)": 445,
+    "('fa', 3)": 49,
+    "('fa', 4)": 1,
+    "('it', 0)": 102,
+    "('it', 1)": 322,
+    "('it', 2)": 46,
+    "('it', 3)": 1,
+    "('it', 4)": 1,
+    "('pl', 0)": 73,
+    "('pl', 1)": 360,
+    "('pl', 2)": 64,
+    "('tr', 0)": 114,
+    "('tr', 1)": 417,
+    "('tr', 2)": 55,
+    "('tr', 4)": 1
+  },
+  "CHECK_fitting": false,
+  "DEV_fitting": false,
+  "TEST_CV_fitting": false,
+  "ASR_updates": 0
+}

@@ -1,0 +1,106 @@
+{
+  "models": {
+    "Text": {
+      "scale": [
+        0.03777399459870658,
+        0.34076525405294594,
+        0.09565673185074158,
+        0.05514452887871585,
+        0.02362031603492984,
+        0.036280987019904246,
+        0.12459178700889921,
+        0.7888100143101132,
+        0.5933678464986687
+      ],
+      "coef": [
+        -0.21677795414149992,
+        0.1493648785363942,
+        0.5210809752511416,
+        -0.5054241515843747,
+        -1.154141813231508,
+        -0.8412476762131396,
+        -1.531423334112724,
+        -0.10771357826404608,
+        0.5678714071987416
+      ],
+      "feature_names": [
+        "mean_clean_logp",
+        "candidate_probability",
+        "log1p_body_tokens",
+        "log1p_normalized_words",
+        "repeated_4gram_ratio",
+        "cap",
+        "MBR_risk",
+        "local_clean_logp",
+        "relative_mean_PLL"
+      ],
+      "dimensions": 9
+    },
+    "Text+Global": {
+      "scale": [
+        0.03777399459870658,
+        0.34076525405294594,
+        0.09565673185074158,
+        0.05514452887871585,
+        0.02362031603492984,
+        0.036280987019904246,
+        0.12459178700889921,
+        0.7888100143101132,
+        0.5933678464986687,
+        0.198017144169991
+      ],
+      "coef": [
+        -0.20184831809506726,
+        0.15895594275312686,
+        0.4624599565312417,
+        -0.5140812786861688,
+        -1.176931886187247,
+        -0.859217885147206,
+        -1.4893028010828768,
+        -0.10888232719367921,
+        0.5507675053709007,
+        -0.09063149249072777
+      ],
+      "feature_names": [
+        "mean_clean_logp",
+        "candidate_probability",
+        "log1p_body_tokens",
+        "log1p_normalized_words",
+        "repeated_4gram_ratio",
+        "cap",
+        "MBR_risk",
+        "local_clean_logp",
+        "relative_mean_PLL",
+        "relative_global_contrast"
+      ],
+      "dimensions": 10
+    }
+  },
+  "original_selector": {
+    "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup7_acoustic_selection_20260921/evidence/SELECTOR_MODELS.json",
+    "sha256": "a544704add5f4cc7b5520de58172418a4fbda8c87e8bc0c7c5f7ff2c773e12bd",
+    "bytes": 5314
+  },
+  "fit_recordings": 1016,
+  "nonbeam_pairs": 3063,
+  "fit_reference_words": {
+    "ar": 3844,
+    "fa": 4604,
+    "pl": 3888,
+    "tr": 3415,
+    "it": 4396
+  },
+  "fit_weight_normalization": 0.25030970084479864,
+  "fit_feature_matrix_sha256": "253324e41c2945af87d3b818768d64d67a4baf94b5fabb6d9c70282d71c012cd",
+  "negative_targets": 1611,
+  "penalty": 0.01,
+  "intercept": false,
+  "CPU_wall_seconds": 4.009484731592238,
+  "PLL_identity": {
+    "path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/integrated_review_revision_20260922/evidence/PLL_IDENTITY.json",
+    "sha256": "1bf90e5b28d51b93f14e006ebf8128227cb83d5a62f5dea0e60a9dc5616011d8",
+    "bytes": 1032
+  },
+  "fit_split": "original seed101 TRAIN-FIT only",
+  "label": "POST_EXPOSURE_FROZEN_MLM_CONTROL"
+}

@@ -1,0 +1,659 @@
+{
+  "texts": [
+    {
+      "text": "(a) Shared-bank comparisons",
+      "x": 7,
+      "y": 14,
+      "font_pt": 9.6,
+      "anchor": "start"
+    },
+    {
+      "text": "ΔWER",
+      "x": 244,
+      "y": 32,
+      "font_pt": 9,
+      "anchor": "end"
+    },
+    {
+      "text": "-2",
+      "x": 105.75,
+      "y": 127,
+      "font_pt": 9,
+      "anchor": "middle"
+    },
+    {
+      "text": "-1",
+      "x": 151.58333333333331,
+      "y": 127,
+      "font_pt": 9,
+      "anchor": "middle"
+    },
+    {
+      "text": "0",
+      "x": 197.41666666666666,
+      "y": 127,
+      "font_pt": 9,
+      "anchor": "middle"
+    },
+    {
+      "text": "Local − B5",
+      "x": 5,
+      "y": 41,
+      "font_pt": 9,
+      "anchor": "start"
+    },
+    {
+      "text": "-1.5178",
+      "x": 245,
+      "y": 41,
+      "font_pt": 9,
+      "anchor": "end"
+    },
+    {
+      "text": "Glo − B5",
+      "x": 5,
+      "y": 57,
+      "font_pt": 9,
+      "anchor": "start"
+    },
+    {
+      "text": "-1.2980",
+      "x": 245,
+      "y": 57,
+      "font_pt": 9,
+      "anchor": "end"
+    },
+    {
+      "text": "MWER-Glo − B5",
+      "x": 5,
+      "y": 73,
+      "font_pt": 9,
+      "anchor": "start"
+    },
+    {
+      "text": "-1.4144",
+      "x": 245,
+      "y": 73,
+      "font_pt": 9,
+      "anchor": "end"
+    },
+    {
+      "text": "Text − Glo",
+      "x": 5,
+      "y": 89,
+      "font_pt": 9,
+      "anchor": "start"
+    },
+    {
+      "text": "-1.2043",
+      "x": 245,
+      "y": 89,
+      "font_pt": 9,
+      "anchor": "end"
+    },
+    {
+      "text": "T+G − Glo",
+      "x": 5,
+      "y": 105,
+      "font_pt": 9,
+      "anchor": "start"
+    },
+    {
+      "text": "-1.2147",
+      "x": 245,
+      "y": 105,
+      "font_pt": 9,
+      "anchor": "end"
+    },
+    {
+      "text": "(b) Audio beyond confidence",
+      "x": 262,
+      "y": 14,
+      "font_pt": 9.6,
+      "anchor": "start"
+    },
+    {
+      "text": "ΔWER",
+      "x": 499,
+      "y": 32,
+      "font_pt": 9,
+      "anchor": "end"
+    },
+    {
+      "text": "-0.25",
+      "x": 354.719298245614,
+      "y": 127,
+      "font_pt": 9,
+      "anchor": "middle"
+    },
+    {
+      "text": "-0.15",
+      "x": 393.3157894736842,
+      "y": 127,
+      "font_pt": 9,
+      "anchor": "middle"
+    },
+    {
+      "text": "0.00",
+      "x": 451.2105263157895,
+      "y": 127,
+      "font_pt": 9,
+      "anchor": "middle"
+    },
+    {
+      "text": "Local − Conf",
+      "x": 260,
+      "y": 48,
+      "font_pt": 9,
+      "anchor": "start"
+    },
+    {
+      "text": "-0.1277",
+      "x": 500,
+      "y": 48,
+      "font_pt": 9,
+      "anchor": "end"
+    },
+    {
+      "text": "Glo − Conf",
+      "x": 260,
+      "y": 75,
+      "font_pt": 9,
+      "anchor": "start"
+    },
+    {
+      "text": "-0.1824",
+      "x": 500,
+      "y": 75,
+      "font_pt": 9,
+      "anchor": "end"
+    },
+    {
+      "text": "MWER: Glo − Conf",
+      "x": 260,
+      "y": 102,
+      "font_pt": 9,
+      "anchor": "start"
+    },
+    {
+      "text": "-0.2039",
+      "x": 500,
+      "y": 102,
+      "font_pt": 9,
+      "anchor": "end"
+    },
+    {
+      "text": "(c) Alternative fitting objective",
+      "x": 7,
+      "y": 144,
+      "font_pt": 9.6,
+      "anchor": "start"
+    },
+    {
+      "text": "-0.20",
+      "x": 112.8108108108108,
+      "y": 204,
+      "font_pt": 9,
+      "anchor": "middle"
+    },
+    {
+      "text": "-0.10",
+      "x": 142.54054054054055,
+      "y": 204,
+      "font_pt": 9,
+      "anchor": "middle"
+    },
+    {
+      "text": "0.00",
+      "x": 172.2702702702703,
+      "y": 204,
+      "font_pt": 9,
+      "anchor": "middle"
+    },
+    {
+      "text": "0.10",
+      "x": 202.0,
+      "y": 204,
+      "font_pt": 9,
+      "anchor": "middle"
+    },
+    {
+      "text": "MWER-Conf − Conf",
+      "x": 5,
+      "y": 166,
+      "font_pt": 9,
+      "anchor": "start"
+    },
+    {
+      "text": "-0.0949",
+      "x": 245,
+      "y": 166,
+      "font_pt": 9,
+      "anchor": "end"
+    },
+    {
+      "text": "MWER-Glo − Glo",
+      "x": 5,
+      "y": 184,
+      "font_pt": 9,
+      "anchor": "start"
+    },
+    {
+      "text": "-0.1164",
+      "x": 245,
+      "y": 184,
+      "font_pt": 9,
+      "anchor": "end"
+    },
+    {
+      "text": "(d) Near-zero increments · expanded axis",
+      "x": 262,
+      "y": 144,
+      "font_pt": 9.6,
+      "anchor": "start"
+    },
+    {
+      "text": "-0.03",
+      "x": 354.8571428571429,
+      "y": 204,
+      "font_pt": 9,
+      "anchor": "middle"
+    },
+    {
+      "text": "0.00",
+      "x": 402.0,
+      "y": 204,
+      "font_pt": 9,
+      "anchor": "middle"
+    },
+    {
+      "text": "0.03",
+      "x": 449.1428571428571,
+      "y": 204,
+      "font_pt": 9,
+      "anchor": "middle"
+    },
+    {
+      "text": "Local − Glo",
+      "x": 260,
+      "y": 166,
+      "font_pt": 9,
+      "anchor": "start"
+    },
+    {
+      "text": "+0.0092",
+      "x": 500,
+      "y": 166,
+      "font_pt": 9,
+      "anchor": "end"
+    },
+    {
+      "text": "T+G − Text",
+      "x": 260,
+      "y": 184,
+      "font_pt": 9,
+      "anchor": "start"
+    },
+    {
+      "text": "-0.0104",
+      "x": 500,
+      "y": 184,
+      "font_pt": 9,
+      "anchor": "end"
+    },
+    {
+      "text": "Original 98.75%",
+      "x": 14,
+      "y": 217,
+      "font_pt": 9,
+      "anchor": "start"
+    },
+    {
+      "text": "Checkpoints 98.33%",
+      "x": 133,
+      "y": 217,
+      "font_pt": 9,
+      "anchor": "start"
+    },
+    {
+      "text": "Objective 98.75%",
+      "x": 282,
+      "y": 217,
+      "font_pt": 9,
+      "anchor": "start"
+    },
+    {
+      "text": "Text 98.33%",
+      "x": 416,
+      "y": 217,
+      "font_pt": 9,
+      "anchor": "start"
+    },
+    {
+      "text": "CV27 ΔWER (percentage points); negative favors first. Panel x scales differ.",
+      "x": 252,
+      "y": 229,
+      "font_pt": 9,
+      "anchor": "middle"
+    }
+  ],
+  "edges": [],
+  "width_pt": 504,
+  "height_pt": 232,
+  "data_sha256": "3815aba55cdf570a5963e8735bd75e7f18f568cc802ff2548cad0b2a50a67306",
+  "statistics_recomputed": false,
+  "rendered_values": [
+    {
+      "group": "Original Local tests, seed101; 98.75%",
+      "name": "Local − B5",
+      "mean": -1.5177669747386489,
+      "lo": -2.1732043850934044,
+      "hi": -0.979240700081836,
+      "display_label": "Local − B5",
+      "panel": "(a) Shared-bank comparisons",
+      "family": "O",
+      "axis_limits": [
+        -2.3,
+        0.1
+      ],
+      "plot_x": [
+        92,
+        202
+      ],
+      "mean_x": 127.85234699114525,
+      "lo_x": 97.81146568321896,
+      "hi_x": 152.53480124624917,
+      "row_y": 38,
+      "zero_line_y": [
+        31,
+        115
+      ]
+    },
+    {
+      "group": "Fixed-checkpoint feature additions; 98.33%",
+      "name": "Global − B5",
+      "mean": -1.2979521976916193,
+      "lo": -1.6607074708358913,
+      "hi": -0.9770519368354335,
+      "display_label": "Glo − B5",
+      "panel": "(a) Shared-bank comparisons",
+      "family": "F",
+      "axis_limits": [
+        -2.3,
+        0.1
+      ],
+      "plot_x": [
+        92,
+        202
+      ],
+      "mean_x": 137.9271909391341,
+      "lo_x": 121.30090758668831,
+      "hi_x": 152.6351195617093,
+      "row_y": 54,
+      "zero_line_y": [
+        31,
+        115
+      ]
+    },
+    {
+      "group": "Exploratory fitting-objective comparison; 98.75%",
+      "name": "MWER-Global − B5",
+      "mean": -1.4143669486294854,
+      "lo": -1.7789733225533837,
+      "hi": -1.0852652249916381,
+      "display_label": "MWER-Glo − B5",
+      "panel": "(a) Shared-bank comparisons",
+      "family": "M",
+      "axis_limits": [
+        -2.3,
+        0.1
+      ],
+      "plot_x": [
+        92,
+        202
+      ],
+      "mean_x": 132.59151485448191,
+      "lo_x": 115.88038938296991,
+      "hi_x": 147.6753438545499,
+      "row_y": 70,
+      "zero_line_y": [
+        31,
+        115
+      ]
+    },
+    {
+      "group": "Frozen-text additions; 98.33%",
+      "name": "Text − Global",
+      "mean": -1.2042873279205537,
+      "lo": -1.2649008455876252,
+      "hi": -1.1461685952714578,
+      "display_label": "Text − Glo",
+      "panel": "(a) Shared-bank comparisons",
+      "family": "T",
+      "axis_limits": [
+        -2.3,
+        0.1
+      ],
+      "plot_x": [
+        92,
+        202
+      ],
+      "mean_x": 142.22016413697463,
+      "lo_x": 139.44204457723384,
+      "hi_x": 144.88393938339152,
+      "row_y": 86,
+      "zero_line_y": [
+        31,
+        115
+      ]
+    },
+    {
+      "group": "Frozen-text additions; 98.33%",
+      "name": "Text+Global − Global",
+      "mean": -1.214672849878113,
+      "lo": -1.2741895365903926,
+      "hi": -1.1575245685238047,
+      "display_label": "T+G − Glo",
+      "panel": "(a) Shared-bank comparisons",
+      "family": "T",
+      "axis_limits": [
+        -2.3,
+        0.1
+      ],
+      "plot_x": [
+        92,
+        202
+      ],
+      "mean_x": 141.74416104725316,
+      "lo_x": 139.01631290627367,
+      "hi_x": 144.3634572759923,
+      "row_y": 102,
+      "zero_line_y": [
+        31,
+        115
+      ]
+    },
+    {
+      "group": "Original Local tests, seed101; 98.75%",
+      "name": "Local − Conf",
+      "mean": -0.12773267627979124,
+      "lo": -0.1747415210770777,
+      "hi": -0.07802982344438993,
+      "display_label": "Local − Conf",
+      "panel": "(b) Audio beyond confidence",
+      "family": "O",
+      "axis_limits": [
+        -0.27,
+        0.015
+      ],
+      "plot_x": [
+        347,
+        457
+      ],
+      "mean_x": 401.9101951200806,
+      "lo_x": 383.76643046147876,
+      "hi_x": 421.0937523547969,
+      "row_y": 45,
+      "zero_line_y": [
+        38,
+        115
+      ]
+    },
+    {
+      "group": "Fixed-checkpoint feature additions; 98.33%",
+      "name": "Global − Conf",
+      "mean": -0.18235737667360516,
+      "lo": -0.21634119195544801,
+      "hi": -0.15026328575230438,
+      "display_label": "Glo − Conf",
+      "panel": "(b) Audio beyond confidence",
+      "family": "F",
+      "axis_limits": [
+        -0.27,
+        0.015
+      ],
+      "plot_x": [
+        347,
+        457
+      ],
+      "mean_x": 380.82697742422255,
+      "lo_x": 367.7104171400025,
+      "hi_x": 393.2141704113913,
+      "row_y": 72,
+      "zero_line_y": [
+        38,
+        115
+      ]
+    },
+    {
+      "group": "Exploratory fitting-objective comparison; 98.75%",
+      "name": "MWER-Global − MWER-Conf",
+      "mean": -0.2038686173947326,
+      "lo": -0.24701946076691098,
+      "hi": -0.16721655444760858,
+      "display_label": "MWER: Glo − Conf",
+      "panel": "(b) Audio beyond confidence",
+      "family": "M",
+      "axis_limits": [
+        -0.27,
+        0.015
+      ],
+      "plot_x": [
+        347,
+        457
+      ],
+      "mean_x": 372.52439328624354,
+      "lo_x": 355.86968180926243,
+      "hi_x": 386.67080354653706,
+      "row_y": 99,
+      "zero_line_y": [
+        38,
+        115
+      ]
+    },
+    {
+      "group": "Exploratory fitting-objective comparison; 98.75%",
+      "name": "MWER-Conf − Conf",
+      "mean": -0.0949035102167386,
+      "lo": -0.21229972851557447,
+      "hi": 0.0720381944879242,
+      "display_label": "MWER-Conf − Conf",
+      "panel": "(c) Alternative fitting objective",
+      "family": "M",
+      "axis_limits": [
+        -0.27,
+        0.1
+      ],
+      "plot_x": [
+        92,
+        202
+      ],
+      "mean_x": 144.05571317880745,
+      "lo_x": 109.15413476564002,
+      "hi_x": 193.6870307937072,
+      "row_y": 163,
+      "zero_line_y": [
+        156,
+        192
+      ]
+    },
+    {
+      "group": "Exploratory fitting-objective comparison; 98.75%",
+      "name": "MWER-Global − Global",
+      "mean": -0.11641475093786369,
+      "lo": -0.23405831118941905,
+      "hi": 0.04712954597292428,
+      "display_label": "MWER-Glo − Glo",
+      "panel": "(c) Alternative fitting objective",
+      "family": "M",
+      "axis_limits": [
+        -0.27,
+        0.1
+      ],
+      "plot_x": [
+        92,
+        202
+      ],
+      "mean_x": 137.6604794509054,
+      "lo_x": 102.68536694368623,
+      "hi_x": 186.28175691086938,
+      "row_y": 181,
+      "zero_line_y": [
+        156,
+        192
+      ]
+    },
+    {
+      "group": "Fixed-checkpoint feature additions; 98.33%",
+      "name": "Local − Global",
+      "mean": 0.009155643183961596,
+      "lo": -0.002085735810680293,
+      "hi": 0.020505951482950525,
+      "display_label": "Local − Glo",
+      "panel": "(d) Near-zero increments · expanded axis",
+      "family": "F",
+      "axis_limits": [
+        -0.035,
+        0.035
+      ],
+      "plot_x": [
+        347,
+        457
+      ],
+      "mean_x": 416.3874392890825,
+      "lo_x": 398.72241515464526,
+      "hi_x": 434.2236380446365,
+      "row_y": 163,
+      "zero_line_y": [
+        156,
+        192
+      ]
+    },
+    {
+      "group": "Frozen-text additions; 98.33%",
+      "name": "Text+Global − Text",
+      "mean": -0.010385521957559263,
+      "lo": -0.027999241576716648,
+      "hi": 0.0068845531988355625,
+      "display_label": "T+G − Text",
+      "panel": "(d) Near-zero increments · expanded axis",
+      "family": "T",
+      "axis_limits": [
+        -0.035,
+        0.035
+      ],
+      "plot_x": [
+        347,
+        457
+      ],
+      "mean_x": 385.6798940666926,
+      "lo_x": 358.0011918080167,
+      "hi_x": 412.81858359817016,
+      "row_y": 181,
+      "zero_line_y": [
+        156,
+        192
+      ]
+    }
+  ]
+}

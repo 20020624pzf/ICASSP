@@ -1,0 +1,11 @@
+split,first,second,paired_calls,mean_paired_latency_difference_seconds,median_paired_latency_difference_seconds,ratio_total_latency,interpretation
+TEST,Conf,B5,300,1.4078862228275588,1.2465413664467633,1.9228947233676195,"Same recording and repetition; descriptive cost only, not additional WER inference"
+TEST,Global,Conf,300,0.10704761883554359,0.10045929672196507,1.0364927092932141,"Same recording and repetition; descriptive cost only, not additional WER inference"
+TEST,Text,Conf,300,0.24259759666398167,0.1345428815111518,1.0827019196372036,"Same recording and repetition; descriptive cost only, not additional WER inference"
+TEST,Text+Global,Text,300,0.1390680420740197,0.11567443562671542,1.0437872357762141,"Same recording and repetition; descriptive cost only, not additional WER inference"
+TEST,Text+Global,Global,300,0.27461801990245777,0.1555290948599577,1.0903216527575397,"Same recording and repetition; descriptive cost only, not additional WER inference"
+CV27,Conf,B5,300,0.5768580126451949,0.5264866072684526,1.94934048673619,"Same recording and repetition; descriptive cost only, not additional WER inference"
+CV27,Global,Conf,300,0.1149935705276827,0.11052968259900808,1.0970820479676662,"Same recording and repetition; descriptive cost only, not additional WER inference"
+CV27,Text,Conf,300,0.09686607151292265,0.058166909497231245,1.0817781077490163,"Same recording and repetition; descriptive cost only, not additional WER inference"
+CV27,Text+Global,Text,300,0.10866282605255644,0.10500544775277376,1.084802406724846,"Same recording and repetition; descriptive cost only, not additional WER inference"
+CV27,Text+Global,Global,300,0.09053532703779638,0.05189099395647645,1.0696697635352876,"Same recording and repetition; descriptive cost only, not additional WER inference"

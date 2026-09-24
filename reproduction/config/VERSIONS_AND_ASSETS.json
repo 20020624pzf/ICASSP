@@ -1,0 +1,236 @@
+{
+  "original_asset_root": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919",
+  "Whisper": {
+    "repo": "openai/whisper-small",
+    "revision": "973afd24965f72e36ca33b3055d56a652f456b4d",
+    "dtype": "bfloat16",
+    "adapters": [
+      {
+        "seed": 101,
+        "adapter_path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup5_frozen_layouts_20260921/runs/F5-R0-101_train_attempt0/adapter/adapter_model.safetensors",
+        "sha256": "2c59f3b9a76622b9cae534f9f44443e0d63068c852bf136a6e404ed00d215279",
+        "bytes": 3579024,
+        "verified_locally_this_revision": true
+      },
+      {
+        "seed": 202,
+        "adapter_path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup5_frozen_layouts_20260921/runs/F5-R0-202_train_attempt0/adapter/adapter_model.safetensors",
+        "sha256": "52f9db5774b5b0dc95ef96df0ebc30193f0e2af9a0d2e5875f0794d6e9eaefb5",
+        "bytes": 3579024,
+        "verified_locally_this_revision": true
+      },
+      {
+        "seed": 303,
+        "adapter_path": "/home/mhmt_stu/Code/paper-qwen-projector-icassp2027/ASR_v2_CV27_run_20260919/followup5_frozen_layouts_20260921/runs/F5-R0-303_train_attempt0/adapter/adapter_model.safetensors",
+        "sha256": "55052010c79310d6da9c1f68f549c8c1030641bf8bb368ae0f530b406c7f9bd9",
+        "bytes": 3579024,
+        "verified_locally_this_revision": true
+      }
+    ]
+  },
+  "XLM_R": {
+    "repo": "FacebookAI/xlm-roberta-base",
+    "revision": "e73636d4f797dec63c3081bb6ed5c7b0bb3f2089",
+    "tokenizer_revision": "e73636d4f797dec63c3081bb6ed5c7b0bb3f2089",
+    "path": "/home/mhmt_stu/.cache/huggingface/hub/models--FacebookAI--xlm-roberta-base/snapshots/e73636d4f797dec63c3081bb6ed5c7b0bb3f2089",
+    "files": {
+      "sentencepiece.bpe.model": {
+        "bytes": 5069051,
+        "sha256": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865"
+      },
+      "config.json": {
+        "bytes": 615,
+        "sha256": "d66ed8cd4f2a93b358c245e50736fa389ed4f35c0bae7aad0b32abb20c62b579"
+      },
+      "README.md": {
+        "bytes": 5238,
+        "sha256": "bec9f2cd81f7396a64ee474145117d81139906443a21480cbe4993c97cb499aa"
+      },
+      "model.safetensors": {
+        "bytes": 1115567652,
+        "sha256": "6fd4797bc397c3b8b55d6bb5740366b57e6a3ce91c04c77f22aafc0c128e6feb"
+      },
+      "tokenizer.json": {
+        "bytes": 9096718,
+        "sha256": "a898ea75433890f6610f4e470b8ebeb0c21dce5c8dd61f892eb09eb5919d2e2c"
+      },
+      "tokenizer_config.json": {
+        "bytes": 25,
+        "sha256": "994f46754c5bf4014f1aa92d34b1374319c3a6b3f702105cd5b742beaecd18ce"
+      }
+    },
+    "download_wall_seconds": 462.06276082992554
+  },
+  "FLEURS": {
+    "identity": "Official FLEURS TSV content pins; no upstream repository commit recorded in these historical manifests",
+    "upstream_commit": "not recorded; no invented revision",
+    "configs": {
+      "ar": "ar_eg",
+      "fa": "fa_ir",
+      "pl": "pl_pl",
+      "tr": "tr_tr",
+      "it": "it_it"
+    },
+    "splits": {
+      "DEV": {
+        "records": 1731,
+        "per_language": {
+          "ar": {
+            "records": 295,
+            "tsv": {
+              "path": "/home/mhmt_stu/Code/data/fleurs_official_5lang/data/ar_eg/dev.tsv",
+              "sha256": "3c9ea61dfd884a47e03ee33c4ef601bed0a1142ce7e5b279cccd0cf321792913",
+              "bytes": 214607
+            }
+          },
+          "fa": {
+            "records": 369,
+            "tsv": {
+              "path": "/home/mhmt_stu/Code/data/fleurs_official_5lang/data/fa_ir/dev.tsv",
+              "sha256": "cac693cd94e40fa00dcffff99a684920d1ff15589f091f977f17a2b702938b12",
+              "bytes": 290279
+            }
+          },
+          "pl": {
+            "records": 338,
+            "tsv": {
+              "path": "/home/mhmt_stu/Code/data/fleurs_official_5lang/data/pl_pl/dev.tsv",
+              "sha256": "c4d7be870be2d252184fc7a415117064a386e39a04e7eb5bfefb0e70c4a1607c",
+              "bytes": 190088
+            }
+          },
+          "tr": {
+            "records": 338,
+            "tsv": {
+              "path": "/home/mhmt_stu/Code/data/fleurs_official_5lang/data/tr_tr/dev.tsv",
+              "sha256": "4b2ee8cac0eef03788fbb433d8568ac41ef5c2b037968737095ff6ab1e80ec6f",
+              "bytes": 191300
+            }
+          },
+          "it": {
+            "records": 391,
+            "tsv": {
+              "path": "/home/mhmt_stu/Code/data/fleurs_official_5lang/data/it_it/dev.tsv",
+              "sha256": "88c805acbbfee426f80164abdd5b696076d09188f6fe7a7c9a69a21c9e8349df",
+              "bytes": 242066
+            }
+          }
+        }
+      },
+      "TEST": {
+        "records": 3665,
+        "per_language": {
+          "ar": {
+            "records": 428,
+            "tsv": {
+              "path": "/home/mhmt_stu/Code/data/fleurs_official_5lang_test/data/ar_eg/test.tsv",
+              "sha256": "af9b9aa3f99c39f90e7f8417f10f2f45a7f783441c6a27abfc2c1bededed4af1",
+              "bytes": 324236
+            }
+          },
+          "fa": {
+            "records": 871,
+            "tsv": {
+              "path": "/home/mhmt_stu/Code/data/fleurs_official_5lang_test/data/fa_ir/test.tsv",
+              "sha256": "2f96b4df444a63964e689db45ce9445c9759b41578d010a5f758dbd29b004579",
+              "bytes": 707771
+            }
+          },
+          "pl": {
+            "records": 758,
+            "tsv": {
+              "path": "/home/mhmt_stu/Code/data/fleurs_official_5lang_test/data/pl_pl/test.tsv",
+              "sha256": "e7fe94fab2b204a863153a1ac1590606c2ee966c58e57b2778d9afe36206c521",
+              "bytes": 455535
+            }
+          },
+          "tr": {
+            "records": 743,
+            "tsv": {
+              "path": "/home/mhmt_stu/Code/data/fleurs_official_5lang_test/data/tr_tr/test.tsv",
+              "sha256": "52adb452a258976a2428da88fe7ac4d9bce27d4c10f9358ba3acf48a9b59577a",
+              "bytes": 447909
+            }
+          },
+          "it": {
+            "records": 865,
+            "tsv": {
+              "path": "/home/mhmt_stu/Code/data/fleurs_official_5lang_test/data/it_it/test.tsv",
+              "sha256": "af1a6d7295547d283441e2ea2e6f24f41d9b26098b47fe3d588930cd053c7b08",
+              "bytes": 561609
+            }
+          }
+        }
+      }
+    }
+  },
+  "CV27": {
+    "release": "cv-corpus-27.0-2026-09-11",
+    "records": 58514,
+    "per_language": {
+      "ar": {
+        "records": 10606,
+        "test_tsv_sha256": "37c018fa8d50824539c997743f1c84635886efed3a32c699c1a42cf2cb240f6b",
+        "archive_bytes": 3542436951,
+        "archive_path": "/home/mhmt_stu/Code/data/common_voice_v27_official_5lang/common-voice-scripted-speech-27-0-arabic-b05a34b5.tar.gz",
+        "missing_client": 0,
+        "clients": 1027
+      },
+      "it": {
+        "records": 15183,
+        "test_tsv_sha256": "2d2bc69104f2953dc7c94ea0058252fc9f42023fc9eb6d1549b7654ab5bedf7d",
+        "archive_bytes": 10542669746,
+        "archive_path": "/home/mhmt_stu/Code/data/common_voice_v27_official_5lang/common-voice-scripted-speech-27-0-italia-5ca1c1b9.tar.gz",
+        "missing_client": 0,
+        "clients": 3865
+      },
+      "fa": {
+        "records": 10755,
+        "test_tsv_sha256": "1884f5a19523e6a6d5df397179079def9d1d7c2774b432b835993baab11765c2",
+        "archive_bytes": 11236660956,
+        "archive_path": "/home/mhmt_stu/Code/data/common_voice_v27_official_5lang/common-voice-scripted-speech-27-0-persia-9d86e98b.tar.gz",
+        "missing_client": 0,
+        "clients": 2850
+      },
+      "pl": {
+        "records": 10096,
+        "test_tsv_sha256": "76fb82bfa286dc516f6c0b496710b25bb45c11521128b493b107804d734104a0",
+        "archive_bytes": 4825781204,
+        "archive_path": "/home/mhmt_stu/Code/data/common_voice_v27_official_5lang/common-voice-scripted-speech-27-0-polish-83b3f213.tar.gz",
+        "missing_client": 0,
+        "clients": 2514
+      },
+      "tr": {
+        "records": 11874,
+        "test_tsv_sha256": "58224165210e972e17b2e0a2a3dfac5337f086d87973afe437d5da158ad639d7",
+        "archive_bytes": 2992390702,
+        "archive_path": "/home/mhmt_stu/Code/data/common_voice_v27_official_5lang/common-voice-scripted-speech-27-0-turkis-b14760fe.tar.gz",
+        "missing_client": 0,
+        "clients": 1500
+      }
+    }
+  },
+  "generation_versions": {
+    "torch": "2.4.0+cu121",
+    "transformers": "4.57.6",
+    "peft": "0.18.1"
+  },
+  "CPU_and_cost_environment_packages": {
+    "torch": "2.4.0",
+    "transformers": "4.57.6",
+    "tokenizers": "0.22.2",
+    "peft": "0.18.1",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "rapidfuzz": "3.14.5",
+    "soundfile": "0.13.1",
+    "matplotlib": "3.10.9",
+    "safetensors": "0.7.0",
+    "huggingface-hub": "0.36.2"
+  },
+  "WER_v3": {
+    "source": "source/wer_rules_v3.py",
+    "sha256": "9e8ac7523ba836128e092f8358ea7949feb3ca16c7245c34dd8de147c19bc3fd"
+  },
+  "weights_raw_audio_transcripts_and_client_ids_bundled": false
+}

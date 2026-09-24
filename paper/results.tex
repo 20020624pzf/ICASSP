@@ -1,0 +1,30 @@
+\begin{figure*}[t]
+\centering\includegraphics[width=\textwidth]{figures/contrasts.pdf}
+\caption{Paired CV27 WER differences; family-specific client intervals condition on fixed fits. Original: seed101, 98.75\%; Checkpoints/Text: three-checkpoint mean, 98.33\% (rounded from 98.333333\%); Objective: the same mean, 98.75\%. Glo=Global, T+G=Text+Global. MWER: Glo$-$Conf compares MWER fits. Scales differ; (d) enlarges zero. All 12 contrasts appear once.}
+\label{fig:contrasts}
+\end{figure*}
+\begin{table}[t]\centering\caption{Test macro WER (\%), mean $\pm$ checkpoint SD; one fit per selector. Oracle6 is reference-dependent. FLEURS retains full references for all 22 recordings exceeding the 30-s input window. MWER and Text are separate post-exposure additions.}\label{tab:main}\begin{tabular}{lcc}\toprule Strategy & FLEURS & CV27 \\\midrule
+\multicolumn{3}{l}{\textit{Standard controls}} \\
+B5 & $18.877\pm0.252$ & $36.414\pm1.186$ \\
+MBR & $18.954\pm0.241$ & $35.225\pm0.634$ \\
+CD-seq & $20.793\pm0.205$ & $39.929\pm0.622$ \\
+G & $21.128\pm0.277$ & $39.341\pm1.494$ \\
+\midrule\multicolumn{3}{l}{\textit{Matched feature ablations (ridge)}} \\
+Conf & $18.938\pm0.285$ & $35.298\pm0.653$ \\
+Global & $18.797\pm0.263$ & $35.116\pm0.640$ \\
+Local & $18.813\pm0.261$ & $35.125\pm0.637$ \\
+\midrule\multicolumn{3}{l}{\textit{Exploratory fitting-objective comparison}} \\
+MWER-Conf & $18.863\pm0.260$ & $35.203\pm0.652$ \\
+MWER-Global & $18.732\pm0.257$ & $35.000\pm0.625$ \\
+\midrule\multicolumn{3}{l}{\textit{Appended frozen-MLM controls}} \\
+Text & $17.810\pm0.260$ & $33.912\pm0.646$ \\
+Text+Global & $17.802\pm0.238$ & $33.901\pm0.639$ \\
+\midrule Oracle6 (diagnostic) & $16.025\pm0.196$ & $28.810\pm0.577$ \\
+\bottomrule\end{tabular}\end{table}
+
+
+\input{language_results.tex}
+
+\noindent\textbf{Increment beyond confidence and consensus.} Global lowers WER by 0.1410 points on FLEURS and 0.1824 on CV27 relative to Conf (Table~\ref{tab:main}; Fig.~\ref{fig:contrasts}(b)). Against the stronger CV27 MBR control, its difference is $-0.1093$ points; the separate post-hoc 95\% client interval is [$-0.2305$, $-0.0131$]. This exploratory interval does not inherit the text family's multiplicity correction.
+
+\noindent\textbf{Local aggregation.} Local has slightly higher mean WER than Global on both test corpora. Its CV27 difference is $+0.0092$ points, with an adjusted interval crossing zero (Fig.~\ref{fig:contrasts}(d)); an incremental benefit is not established. Table~\ref{tab:languages} reports the language-specific directions.

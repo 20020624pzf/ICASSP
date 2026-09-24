@@ -1,0 +1,19 @@
+\begin{table}[t]\centering\setlength{\tabcolsep}{2pt}
+\caption{Three-checkpoint language WER (\%). $\Delta_L=$Local--Global, $\Delta_T=$Text+Global--Text; positive is worse. Bold denotes the lowest point estimate, not significance. Glo/T+G=Global/Text+Global.}\label{tab:languages}
+\begin{tabular}{lrrrrrr}\toprule
+ & \multicolumn{4}{c}{Absolute WER} & \multicolumn{2}{c}{Differences} \\
+Lang. & Conf & Glo & Text & T+G & $\Delta_L$ & $\Delta_T$ \\\midrule
+\multicolumn{7}{l}{\textit{FLEURS}}\\
+ar & 26.618 & 26.510 & 25.315 & \textbf{25.278} & +0.012 & -0.037 \\
+fa & 32.109 & 32.049 & 30.963 & \textbf{30.947} & +0.003 & -0.017 \\
+pl & 15.162 & 14.944 & 14.036 & \textbf{14.019} & +0.009 & -0.016 \\
+tr & 13.335 & 13.153 & \textbf{12.078} & 12.093 & +0.057 & +0.015 \\
+it & 7.465 & 7.328 & \textbf{6.660} & 6.671 & -0.002 & +0.011 \\
+\midrule
+\multicolumn{7}{l}{\textit{CV27}}\\
+ar & 53.715 & 53.508 & 52.621 & \textbf{52.564} & -0.003 & -0.056 \\
+fa & 67.382 & 67.326 & \textbf{65.950} & 65.955 & +0.004 & +0.005 \\
+pl & 17.257 & 16.938 & 15.390 & \textbf{15.385} & -0.006 & -0.005 \\
+tr & 22.766 & 22.548 & 21.493 & \textbf{21.478} & +0.036 & -0.014 \\
+it & 15.373 & 15.260 & \textbf{14.105} & 14.124 & +0.015 & +0.019 \\
+\bottomrule\end{tabular}\end{table}

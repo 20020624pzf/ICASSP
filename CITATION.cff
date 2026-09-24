@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Please cite the author manuscript if you use these artifacts."
+title: "Conditional Value of Permutation Scores in Frozen Multilingual ASR Reranking"
+type: software
+authors:
+  - family-names: Pan
+    given-names: Zhifan
+    orcid: "https://orcid.org/0009-0007-2369-4884"
+  - family-names: Ming
+    given-names: Yuhui
+    orcid: "https://orcid.org/0009-0003-1638-9735"
+  - family-names: Maimaiti
+    given-names: Maihemuti
+    orcid: "https://orcid.org/0009-0001-9225-0554"
+  - family-names: Wumaier
+    given-names: Aishan
+    orcid: "https://orcid.org/0000-0003-1681-1089"
+repository-code: "https://github.com/20020624pzf/ICASSP"
+version: "submission-artifacts-20260924"
+date-released: 2026-09-24

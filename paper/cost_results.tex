@@ -1,0 +1,10 @@
+\begin{table}[t]\centering\setlength{\tabcolsep}{3pt}\caption{Warm-inference cost, seed101: 100 recordings per corpus, three warm runs per system, two NVIDIA A40 GPUs. RTF uses processed duration; med/p95 is sentence latency (seconds). Candidates and scores are recomputed after model loading.}\label{tab:cost}
+\begin{tabular}{lrrrr}\toprule & \multicolumn{2}{c}{FLEURS} & \multicolumn{2}{c}{CV27}\\
+Pipeline & RTF & med/p95 & RTF & med/p95 \\\midrule
+B5 & 0.122 & 1.35/3.01 & 0.121 & 0.56/1.20 \\
+Conf & 0.235 & 2.63/5.69 & 0.236 & 1.08/2.37 \\
+Global & 0.244 & 2.74/5.89 & 0.259 & 1.21/2.38 \\
+Text & 0.255 & 2.79/6.39 & 0.256 & 1.20/2.40 \\
+Text+Global & 0.266 & 2.99/6.59 & 0.277 & 1.31/2.60 \\
+\bottomrule\end{tabular}\end{table}
+\noindent\textbf{Acquisition cost.} Under shared load, summed warm-time ratios for Global/Conf are 1.036 on FLEURS and 1.097 on CV27; Text+Global/Text ratios are 1.044 and 1.085. Pooled ratios are 1.054 [descriptive 95\% sampling interval: 1.049, 1.059] and 1.056 [1.050, 1.061]. Conf/B5 is 1.930 [1.921, 1.940]: the small marginal Global cost excludes the common reranking overhead. These intervals do not cover time-varying contention. XLM-R raises peak allocation from 833 to 2{,}105 MiB and adds a 1.13 GB snapshot. External GPU processes appeared at 1{,}672/3{,}000 timing boundaries on one card; different recording subsets preclude between-card speed comparisons.

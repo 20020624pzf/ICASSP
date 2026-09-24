@@ -1,0 +1,86 @@
+[
+  {
+    "group": "Original Local tests, seed101; 98.75%",
+    "name": "Local \u2212 B5",
+    "mean": -1.5177669747386489,
+    "lo": -2.1732043850934044,
+    "hi": -0.979240700081836
+  },
+  {
+    "group": "Original Local tests, seed101; 98.75%",
+    "name": "Local \u2212 Conf",
+    "mean": -0.12773267627979124,
+    "lo": -0.1747415210770777,
+    "hi": -0.07802982344438993
+  },
+  {
+    "group": "Fixed-checkpoint feature additions; 98.33%",
+    "name": "Global \u2212 B5",
+    "mean": -1.2979521976916193,
+    "lo": -1.6607074708358913,
+    "hi": -0.9770519368354335
+  },
+  {
+    "group": "Fixed-checkpoint feature additions; 98.33%",
+    "name": "Global \u2212 Conf",
+    "mean": -0.18235737667360516,
+    "lo": -0.21634119195544801,
+    "hi": -0.15026328575230438
+  },
+  {
+    "group": "Fixed-checkpoint feature additions; 98.33%",
+    "name": "Local \u2212 Global",
+    "mean": 0.009155643183961596,
+    "lo": -0.002085735810680293,
+    "hi": 0.020505951482950525
+  },
+  {
+    "group": "Exploratory fitting-objective comparison; 98.75%",
+    "name": "MWER-Conf \u2212 Conf",
+    "mean": -0.0949035102167386,
+    "lo": -0.21229972851557447,
+    "hi": 0.0720381944879242
+  },
+  {
+    "group": "Exploratory fitting-objective comparison; 98.75%",
+    "name": "MWER-Global \u2212 Global",
+    "mean": -0.11641475093786369,
+    "lo": -0.23405831118941905,
+    "hi": 0.04712954597292428
+  },
+  {
+    "group": "Exploratory fitting-objective comparison; 98.75%",
+    "name": "MWER-Global \u2212 MWER-Conf",
+    "mean": -0.2038686173947326,
+    "lo": -0.24701946076691098,
+    "hi": -0.16721655444760858
+  },
+  {
+    "group": "Exploratory fitting-objective comparison; 98.75%",
+    "name": "MWER-Global \u2212 B5",
+    "mean": -1.4143669486294854,
+    "lo": -1.7789733225533837,
+    "hi": -1.0852652249916381
+  },
+  {
+    "group": "Frozen-text additions; 98.33%",
+    "name": "Text \u2212 Global",
+    "mean": -1.2042873279205537,
+    "lo": -1.2649008455876252,
+    "hi": -1.1461685952714578
+  },
+  {
+    "group": "Frozen-text additions; 98.33%",
+    "name": "Text+Global \u2212 Text",
+    "mean": -0.010385521957559263,
+    "lo": -0.027999241576716648,
+    "hi": 0.0068845531988355625
+  },
+  {
+    "group": "Frozen-text additions; 98.33%",
+    "name": "Text+Global \u2212 Global",
+    "mean": -1.214672849878113,
+    "lo": -1.2741895365903926,
+    "hi": -1.1575245685238047
+  }
+]
