@@ -27,11 +27,12 @@ Install a LaTeX distribution with latexmk, pdfLaTeX, and the standard packages u
 by the supplied source. The conference style is included unchanged.
 
 ```bash
-make -C paper
+bash paper/build.sh
 ```
 
 Expected output: `paper/ICASSP2027_submission_final.pdf`, five US Letter pages.
-Pre-rendered vector figures are included, so the paper build does not need Python.
+Pre-rendered vector figures are included, so the paper build does not need Python
+or GNU Make. `make -C paper` remains an optional equivalent if Make is installed.
 
 ## Optional reproduction of already reported uncertainty (CPU)
 

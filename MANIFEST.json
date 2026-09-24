@@ -60,8 +60,8 @@
     },
     {
       "path": "REPRODUCE.md",
-      "bytes": 4781,
-      "sha256": "0d7911334c80ad20d380ab05e42c5bf8f4e4f064b46222d473ec4eb34af8e7ca",
+      "bytes": 4868,
+      "sha256": "04206f3f2972aec9f8f1b67a25c4cb0b831b5557644ab32b4d8275dd4c00238e",
       "category": "release documentation"
     },
     {
@@ -104,6 +104,12 @@
       "path": "paper/abstract_results.tex",
       "bytes": 1077,
       "sha256": "5b7134606d2f9b6adf70a0d78eaffd845feec7b548f9de1ed11d52e8388828d1",
+      "category": "paper"
+    },
+    {
+      "path": "paper/build.sh",
+      "bytes": 188,
+      "sha256": "521c8da17841474b716e06b845a81cb9aa4364f2107ba389f9dcee1f324b010f",
       "category": "paper"
     },
     {
