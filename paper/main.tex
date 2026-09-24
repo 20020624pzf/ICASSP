@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage{spconf,amsmath,amssymb,graphicx,booktabs,url,balance}
+\usepackage[hidelinks,bookmarks=false,hyperfootnotes=false]{hyperref}
 \urlstyle{same}
 \renewcommand{\footnotesize}{\fontsize{9}{10.8}\selectfont}
 \setlength{\dbltextfloatsep}{10pt plus 2pt minus 2pt}
@@ -27,7 +28,7 @@ An improvement over beam search alone cannot isolate the value of a perturbation
 
 We test this question on shared frozen candidate banks. Matched feature ablations isolate the added score from candidate quality; duplicate-coordinate and alternative-parameterization controls test simpler explanations for ridge gains. Inference measurements include candidate and score acquisition.
 
-Across five languages and three recognizer checkpoints, permutation scores yield small gains over internal confidence, without established gains beyond external text. Our contribution is a controlled assessment of scoring information, parameterization, fit sensitivity and resources.
+Across five languages and three recognizer checkpoints, permutation scores yield small gains over internal confidence, without established gains beyond external text. Our contribution is a controlled assessment of scoring information, parameterization, fit sensitivity and resources.\footnote{Code, locked selectors and aggregate results: \url{https://github.com/20020624pzf/ICASSP}.}
 
 \section{Related work}
 \textbf{Adaptation and reranking.} LoRA-Whisper~\cite{lorawhisper} and language experts~\cite{loraexperts} adapt ASR; we freeze it. Multilingual rescoring combines acoustics and text~\cite{gaur2022,yan2025wild}; unlike~\cite{yan2025wild}, we assume known language. RescoreBERT~\cite{rescorebert} trains a BERT reranker; we use established pseudo-log-likelihood (PLL) scoring~\cite{mlmscoring} from a frozen masked language model (MLM).
@@ -98,25 +99,25 @@ This study reanalysed existing FLEURS and CV27 releases under their published te
 \section{Funding acknowledgments}
 Supported by the National Natural Science Foundation of China (62466058) and the Autonomous Region Key R\&D Program (2025B03042-1).
 \begin{thebibliography}{99}
-\bibitem{jiang2005} H. Jiang, ``Confidence measures for speech recognition: A survey,'' \emph{Speech Communication}, vol. 45, no. 4, pp. 455--470, 2005, doi: \url{10.1016/j.specom.2004.12.004}.
-\bibitem{lorawhisper} Z. Song, J. Zhuo, Y. Yang, Z. Ma, S. Zhang, and X. Chen, ``LoRA-Whisper: Parameter-efficient and extensible multilingual ASR,'' in \emph{Proc. Interspeech}, 2024, pp. 3934--3938, doi: \url{10.21437/Interspeech.2024-892}.
-\bibitem{loraexperts} J. Li et al., ``Efficient multilingual ASR finetuning via LoRA language experts,'' in \emph{Proc. Interspeech}, 2025, pp. 1138--1142, doi: \url{10.21437/Interspeech.2025-1374}.
+\bibitem{jiang2005} H. Jiang, ``Confidence measures for speech recognition: A survey,'' \emph{Speech Communication}, vol. 45, no. 4, pp. 455--470, 2005, doi: \href{https://doi.org/10.1016/j.specom.2004.12.004}{\nolinkurl{10.1016/j.specom.2004.12.004}}.
+\bibitem{lorawhisper} Z. Song, J. Zhuo, Y. Yang, Z. Ma, S. Zhang, and X. Chen, ``LoRA-Whisper: Parameter-efficient and extensible multilingual ASR,'' in \emph{Proc. Interspeech}, 2024, pp. 3934--3938, doi: \href{https://doi.org/10.21437/Interspeech.2024-892}{\nolinkurl{10.21437/Interspeech.2024-892}}.
+\bibitem{loraexperts} J. Li et al., ``Efficient multilingual ASR finetuning via LoRA language experts,'' in \emph{Proc. Interspeech}, 2025, pp. 1138--1142, doi: \href{https://doi.org/10.21437/Interspeech.2025-1374}{\nolinkurl{10.21437/Interspeech.2025-1374}}.
 
-\bibitem{gaur2022} N. Gaur, T. Chen, E. Variani, P. Haghani, B. Ramabhadran, and P. J. Moreno, ``Multilingual second-pass rescoring for automatic speech recognition systems,'' in \emph{Proc. ICASSP}, 2022, pp. 6407--6411, doi: \url{10.1109/ICASSP43922.2022.9746453}.
-\bibitem{yan2025wild} B. Yan, V. Pratap, S. Watanabe, and M. Auli, ``Improving multilingual ASR in the wild using simple N-best re-ranking,'' in \emph{Proc. ICASSP}, 2025, pp. 1--5, doi: \url{10.1109/ICASSP49660.2025.10888575}.
-\bibitem{rescorebert} L. Xu et al., ``RescoreBERT: Discriminative speech recognition rescoring with BERT,'' in \emph{Proc. ICASSP}, 2022, pp. 6117--6121, doi: \url{10.1109/ICASSP43922.2022.9747118}.
-\bibitem{mlmscoring} J. Salazar, D. Liang, T. Q. Nguyen, and K. Kirchhoff, ``Masked language model scoring,'' in \emph{Proc. ACL}, 2020, pp. 2699--2712, doi: \url{10.18653/v1/2020.acl-main.240}.
-\bibitem{goel2000mbr} V. Goel and W. J. Byrne, ``Minimum Bayes-risk automatic speech recognition,'' \emph{Computer Speech \& Language}, vol. 14, no. 2, pp. 115--135, 2000, doi: \url{10.1006/csla.2000.0138}.
-\bibitem{mwer} R. Prabhavalkar et al., ``Minimum word error rate training for attention-based sequence-to-sequence models,'' in \emph{Proc. ICASSP}, 2018, pp. 4839--4843, doi: \url{10.1109/ICASSP.2018.8461809}.
-\bibitem{rescoring} P. G. Shivakumar et al., ``Speech recognition rescoring with large speech-text foundation models,'' in \emph{Proc. ICASSP}, 2025, pp. 1--5, doi: \url{10.1109/ICASSP49660.2025.10890616}.
+\bibitem{gaur2022} N. Gaur, T. Chen, E. Variani, P. Haghani, B. Ramabhadran, and P. J. Moreno, ``Multilingual second-pass rescoring for automatic speech recognition systems,'' in \emph{Proc. ICASSP}, 2022, pp. 6407--6411, doi: \href{https://doi.org/10.1109/ICASSP43922.2022.9746453}{\nolinkurl{10.1109/ICASSP43922.2022.9746453}}.
+\bibitem{yan2025wild} B. Yan, V. Pratap, S. Watanabe, and M. Auli, ``Improving multilingual ASR in the wild using simple N-best re-ranking,'' in \emph{Proc. ICASSP}, 2025, pp. 1--5, doi: \href{https://doi.org/10.1109/ICASSP49660.2025.10888575}{\nolinkurl{10.1109/ICASSP49660.2025.10888575}}.
+\bibitem{rescorebert} L. Xu et al., ``RescoreBERT: Discriminative speech recognition rescoring with BERT,'' in \emph{Proc. ICASSP}, 2022, pp. 6117--6121, doi: \href{https://doi.org/10.1109/ICASSP43922.2022.9747118}{\nolinkurl{10.1109/ICASSP43922.2022.9747118}}.
+\bibitem{mlmscoring} J. Salazar, D. Liang, T. Q. Nguyen, and K. Kirchhoff, ``Masked language model scoring,'' in \emph{Proc. ACL}, 2020, pp. 2699--2712, doi: \href{https://doi.org/10.18653/v1/2020.acl-main.240}{\nolinkurl{10.18653/v1/2020.acl-main.240}}.
+\bibitem{goel2000mbr} V. Goel and W. J. Byrne, ``Minimum Bayes-risk automatic speech recognition,'' \emph{Computer Speech \& Language}, vol. 14, no. 2, pp. 115--135, 2000, doi: \href{https://doi.org/10.1006/csla.2000.0138}{\nolinkurl{10.1006/csla.2000.0138}}.
+\bibitem{mwer} R. Prabhavalkar et al., ``Minimum word error rate training for attention-based sequence-to-sequence models,'' in \emph{Proc. ICASSP}, 2018, pp. 4839--4843, doi: \href{https://doi.org/10.1109/ICASSP.2018.8461809}{\nolinkurl{10.1109/ICASSP.2018.8461809}}.
+\bibitem{rescoring} P. G. Shivakumar et al., ``Speech recognition rescoring with large speech-text foundation models,'' in \emph{Proc. ICASSP}, 2025, pp. 1--5, doi: \href{https://doi.org/10.1109/ICASSP49660.2025.10890616}{\nolinkurl{10.1109/ICASSP49660.2025.10890616}}.
 \bibitem{whispercd} H. Ahn, J. Chae, Y. Park, and K. Shim, ``Whisper-CD: Accurate long-form speech recognition using multi-negative contrastive decoding,'' in \emph{Proc. Interspeech}, 2026, pp. 804--808, \url{https://www.isca-archive.org/interspeech_2026/ahn26b_interspeech.html}.
 \bibitem{lcar} J. Kuang, L. Zheng, H. Song, Z. Cui, and S. Li, ``Likelihood-constrained acoustic reranking for training-free hallucination mitigation in LLM-based ASR,'' arXiv:2608.30776v1, 2026, preprint.
-\bibitem{beyondwer} S. Liang, N. Ballier, G.-A. Levow, and R. Wright, ``Beyond WER: Probing Whisper's sub-token decoder across diverse language resource levels,'' in \emph{Proc. EMNLP}, 2025, pp. 31237--31247, doi: \url{10.18653/v1/2025.emnlp-main.1591}.
-\bibitem{normalization} K. Manohar and L. G. Pillai, ``What is lost in normalization? Exploring pitfalls in multilingual ASR model evaluations,'' in \emph{Proc. EMNLP}, 2024, pp. 10864--10869, doi: \url{10.18653/v1/2024.emnlp-main.607}.
+\bibitem{beyondwer} S. Liang, N. Ballier, G.-A. Levow, and R. Wright, ``Beyond WER: Probing Whisper's sub-token decoder across diverse language resource levels,'' in \emph{Proc. EMNLP}, 2025, pp. 31237--31247, doi: \href{https://doi.org/10.18653/v1/2025.emnlp-main.1591}{\nolinkurl{10.18653/v1/2025.emnlp-main.1591}}.
+\bibitem{normalization} K. Manohar and L. G. Pillai, ``What is lost in normalization? Exploring pitfalls in multilingual ASR model evaluations,'' in \emph{Proc. EMNLP}, 2024, pp. 10864--10869, doi: \href{https://doi.org/10.18653/v1/2024.emnlp-main.607}{\nolinkurl{10.18653/v1/2024.emnlp-main.607}}.
 \bibitem{whisper} A. Radford, J. W. Kim, T. Xu, G. Brockman, C. McLeavey, and I. Sutskever, ``Robust speech recognition via large-scale weak supervision,'' in \emph{Proc. ICML}, PMLR, vol. 202, 2023, pp. 28492--28518.
 \bibitem{lora} E. J. Hu et al., ``LoRA: Low-rank adaptation of large language models,'' in \emph{Proc. ICLR}, 2022.
-\bibitem{xlmr} A. Conneau et al., ``Unsupervised cross-lingual representation learning at scale,'' in \emph{Proc. ACL}, 2020, pp. 8440--8451, doi: \url{10.18653/v1/2020.acl-main.747}.
-\bibitem{fleurs} A. Conneau et al., ``FLEURS: Few-shot learning evaluation of universal representations of speech,'' in \emph{2022 IEEE Spoken Language Technology Workshop (SLT)}, 2023, pp. 798--805, doi: \url{10.1109/SLT54892.2023.10023141}.
+\bibitem{xlmr} A. Conneau et al., ``Unsupervised cross-lingual representation learning at scale,'' in \emph{Proc. ACL}, 2020, pp. 8440--8451, doi: \href{https://doi.org/10.18653/v1/2020.acl-main.747}{\nolinkurl{10.18653/v1/2020.acl-main.747}}.
+\bibitem{fleurs} A. Conneau et al., ``FLEURS: Few-shot learning evaluation of universal representations of speech,'' in \emph{2022 IEEE Spoken Language Technology Workshop (SLT)}, 2023, pp. 798--805, doi: \href{https://doi.org/10.1109/SLT54892.2023.10023141}{\nolinkurl{10.1109/SLT54892.2023.10023141}}.
 \bibitem{cv} R. Ardila et al., ``Common Voice: A massively-multilingual speech corpus,'' in \emph{Proc. LREC}, 2020, pp. 4218--4222.
 \bibitem{cv27data} Mozilla Data Collective, ``Common Voice Scripted Speech 27.0,'' release cv-corpus-27.0-2026-09-11, five-language dataset records, \url{https://mozilladatacollective.com/datasets}, accessed September 22, 2026.
 \end{thebibliography}

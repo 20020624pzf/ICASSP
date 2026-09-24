@@ -72,8 +72,8 @@
     },
     {
       "path": "SOURCE_ORIGINS.json",
-      "bytes": 18229,
-      "sha256": "936be3d8cae7fef4f64e26c9ce4d13111d3a334f4d79f9144213a32f75da0034",
+      "bytes": 18395,
+      "sha256": "0de6935c3391797428eec9feae5b37f260fcdca3d4175d9d6785fec74dca883b",
       "category": "release documentation"
     },
     {
@@ -84,8 +84,8 @@
     },
     {
       "path": "paper/ICASSP2027_submission_final.pdf",
-      "bytes": 399349,
-      "sha256": "7205fcf3acb70d9560d6d5d7ef8566a8c8350abe40a0ebcdc6c19ec1b75b88ab",
+      "bytes": 403705,
+      "sha256": "938079438166be300cf6ce646ae00141b1fdeaf8d65f4b97187e835d14815d10",
       "category": "paper"
     },
     {
@@ -246,8 +246,8 @@
     },
     {
       "path": "paper/main.tex",
-      "bytes": 17118,
-      "sha256": "268199d17dbc86900a0321e2e569042e2c9e213e6e660695af4e754cc595671e",
+      "bytes": 18140,
+      "sha256": "c533dc5d916a77e2f135f914f10198b1b8341b302ce5d24d68cf8223be5b6064",
       "category": "paper"
     },
     {

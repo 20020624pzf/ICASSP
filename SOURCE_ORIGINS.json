@@ -323,7 +323,7 @@
       "path": "paper/main.tex",
       "sha256": "268199d17dbc86900a0321e2e569042e2c9e213e6e660695af4e754cc595671e",
       "bytes": 17118,
-      "operation": "byte-identical copy"
+      "operation": "Add verified public repository footnote, enable links and make DOI targets absolute; displayed bibliography unchanged"
     },
     {
       "path": "paper/results.tex",
@@ -491,7 +491,7 @@
       "path": "paper/ICASSP2027_submission_final.pdf",
       "sha256": "7205fcf3acb70d9560d6d5d7ef8566a8c8350abe40a0ebcdc6c19ec1b75b88ab",
       "bytes": 399349,
-      "operation": "byte-identical copy"
+      "operation": "Recompiled manuscript with verified repository link; original content SHA retained here"
     },
     {
       "path": "reproduction/source/fixed_bank_mwer.py",
