@@ -1,5 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="504pt" height="232pt" viewBox="0 0 504 232">
 <rect width="100%" height="100%" fill="white"/>
+<rect x="0.5" y="0.5" width="248" height="128.5" rx="4" fill="white" stroke="#C9D6E2" stroke-width="0.55"/>
+<rect x="255.5" y="0.5" width="248" height="128.5" rx="4" fill="white" stroke="#C9D6E2" stroke-width="0.55"/>
+<rect x="0.5" y="132.5" width="248" height="75.5" rx="4" fill="white" stroke="#C9D6E2" stroke-width="0.55"/>
+<rect x="255.5" y="132.5" width="248" height="75.5" rx="4" fill="white" stroke="#C9D6E2" stroke-width="0.55"/>
+<rect x="1" y="209" width="502" height="13" rx="3" fill="#F8FAFC" stroke="#C9D6E2" stroke-width="0.5"/>
 <rect x="1" y="2" width="247" height="18" rx="2" fill="#F0F4F8" stroke="none" stroke-width="0.7"/>
 <text x="7" y="14" font-family="Liberation Sans, Arial, sans-serif" font-size="9.6" font-weight="bold" fill="#202B33" text-anchor="start">(a) Shared-bank comparisons</text>
 <text x="244" y="32" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="end">ΔWER</text>
@@ -8,45 +13,45 @@
 <path d="M5,79 L247,79" fill="none" stroke="#E9EDF2" stroke-width="0.35" stroke-linejoin="round"/>
 <path d="M5,95 L247,95" fill="none" stroke="#E9EDF2" stroke-width="0.35" stroke-linejoin="round"/>
 <path d="M5,111 L247,111" fill="none" stroke="#E9EDF2" stroke-width="0.35" stroke-linejoin="round"/>
-<path d="M105.75,31 L105.75,115" fill="none" stroke="#E4EAF0" stroke-width="0.4" stroke-linejoin="round"/>
-<path d="M105.75,115 L105.75,117" fill="none" stroke="#8698A8" stroke-width="0.5" stroke-linejoin="round"/>
-<text x="105.75" y="127" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="middle">-2</text>
-<path d="M151.58333333333331,31 L151.58333333333331,115" fill="none" stroke="#E4EAF0" stroke-width="0.4" stroke-linejoin="round"/>
-<path d="M151.58333333333331,115 L151.58333333333331,117" fill="none" stroke="#8698A8" stroke-width="0.5" stroke-linejoin="round"/>
-<text x="151.58333333333331" y="127" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="middle">-1</text>
-<path d="M197.41666666666666,115 L197.41666666666666,117" fill="none" stroke="#8698A8" stroke-width="0.5" stroke-linejoin="round"/>
-<text x="197.41666666666666" y="127" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="middle">0</text>
-<path d="M92,115 L202,115" fill="none" stroke="#8698A8" stroke-width="0.55" stroke-linejoin="round"/>
-<path d="M197.41666666666666,31 L197.41666666666666,115" fill="none" stroke="#465966" stroke-width="0.85" stroke-linejoin="round" stroke-dasharray="2.2 2.2"/>
-<text x="5" y="41" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#202B33" text-anchor="start">Local − B5</text>
-<path d="M97.81146568321896,38 L152.53480124624917,38" fill="none" stroke="#C76B24" stroke-width="1.05" stroke-linejoin="round"/>
-<path d="M97.81146568321896,35.7 L97.81146568321896,40.3" fill="none" stroke="#C76B24" stroke-width="0.8" stroke-linejoin="round"/>
-<path d="M152.53480124624917,35.7 L152.53480124624917,40.3" fill="none" stroke="#C76B24" stroke-width="0.8" stroke-linejoin="round"/>
-<circle cx="127.85234699114525" cy="38" r="2.35" fill="white" stroke="#C76B24" stroke-width="1.0"/>
+<path d="M118.875,31 L118.875,115" fill="none" stroke="#E4EAF0" stroke-width="0.4" stroke-linejoin="round"/>
+<path d="M118.875,115 L118.875,117" fill="none" stroke="#8698A8" stroke-width="0.5" stroke-linejoin="round"/>
+<text x="118.875" y="127" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="middle">-2</text>
+<path d="M158.45833333333331,31 L158.45833333333331,115" fill="none" stroke="#E4EAF0" stroke-width="0.4" stroke-linejoin="round"/>
+<path d="M158.45833333333331,115 L158.45833333333331,117" fill="none" stroke="#8698A8" stroke-width="0.5" stroke-linejoin="round"/>
+<text x="158.45833333333331" y="127" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="middle">-1</text>
+<path d="M198.04166666666666,115 L198.04166666666666,117" fill="none" stroke="#8698A8" stroke-width="0.5" stroke-linejoin="round"/>
+<text x="198.04166666666666" y="127" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="middle">0</text>
+<path d="M107,115 L202,115" fill="none" stroke="#8698A8" stroke-width="0.55" stroke-linejoin="round"/>
+<path d="M198.04166666666666,31 L198.04166666666666,115" fill="none" stroke="#465966" stroke-width="0.85" stroke-linejoin="round" stroke-dasharray="2.2 2.2"/>
+<text x="5" y="41" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#202B33" text-anchor="start">Local − B5 [101]</text>
+<path d="M112.01899309005273,38 L159.28005562176065,38" fill="none" stroke="#C76B24" stroke-width="1.05" stroke-linejoin="round"/>
+<path d="M112.01899309005273,35.7 L112.01899309005273,40.3" fill="none" stroke="#C76B24" stroke-width="0.8" stroke-linejoin="round"/>
+<path d="M159.28005562176065,35.7 L159.28005562176065,40.3" fill="none" stroke="#C76B24" stroke-width="0.8" stroke-linejoin="round"/>
+<circle cx="137.9633905832618" cy="38" r="2.35" fill="white" stroke="#C76B24" stroke-width="1.0"/>
 <text x="245" y="41" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#202B33" text-anchor="end">-1.5178</text>
 <text x="5" y="57" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#202B33" text-anchor="start">Glo − B5</text>
-<path d="M121.30090758668831,54 L152.6351195617093,54" fill="none" stroke="#0072B2" stroke-width="1.05" stroke-linejoin="round"/>
-<path d="M121.30090758668831,51.7 L121.30090758668831,56.3" fill="none" stroke="#0072B2" stroke-width="0.8" stroke-linejoin="round"/>
-<path d="M152.6351195617093,51.7 L152.6351195617093,56.3" fill="none" stroke="#0072B2" stroke-width="0.8" stroke-linejoin="round"/>
-<rect x="135.72719093913412" y="51.8" width="4.4" height="4.4" rx="0" fill="#0072B2" stroke="#0072B2" stroke-width="0.6"/>
+<path d="M132.30532927941263,54 L159.36669416693076,54" fill="none" stroke="#0072B2" stroke-width="1.05" stroke-linejoin="round"/>
+<path d="M132.30532927941263,51.7 L132.30532927941263,56.3" fill="none" stroke="#0072B2" stroke-width="0.8" stroke-linejoin="round"/>
+<path d="M159.36669416693076,51.7 L159.36669416693076,56.3" fill="none" stroke="#0072B2" stroke-width="0.8" stroke-linejoin="round"/>
+<rect x="144.46439217470675" y="51.8" width="4.4" height="4.4" rx="0" fill="#0072B2" stroke="#0072B2" stroke-width="0.6"/>
 <text x="245" y="57" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#202B33" text-anchor="end">-1.2980</text>
 <text x="5" y="73" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#202B33" text-anchor="start">MWER-Glo − B5</text>
-<path d="M115.88038938296991,70 L147.6753438545499,70" fill="none" stroke="#92569D" stroke-width="1.05" stroke-linejoin="round"/>
-<path d="M115.88038938296991,67.7 L115.88038938296991,72.3" fill="none" stroke="#92569D" stroke-width="0.8" stroke-linejoin="round"/>
-<path d="M147.6753438545499,67.7 L147.6753438545499,72.3" fill="none" stroke="#92569D" stroke-width="0.8" stroke-linejoin="round"/>
-<path d="M132.59151485448191,67.2 L135.2915148544819,72.2 L129.89151485448193,72.2 Z" fill="#92569D"/>
+<path d="M127.62397264892856,70 L155.08325151074766,70" fill="none" stroke="#92569D" stroke-width="1.05" stroke-linejoin="round"/>
+<path d="M127.62397264892856,67.7 L127.62397264892856,72.3" fill="none" stroke="#92569D" stroke-width="0.8" stroke-linejoin="round"/>
+<path d="M155.08325151074766,67.7 L155.08325151074766,72.3" fill="none" stroke="#92569D" stroke-width="0.8" stroke-linejoin="round"/>
+<path d="M142.0563082834162,67.2 L144.7563082834162,72.2 L139.3563082834162,72.2 Z" fill="#92569D"/>
 <text x="245" y="73" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#202B33" text-anchor="end">-1.4144</text>
 <text x="5" y="89" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#202B33" text-anchor="start">Text − Glo</text>
-<path d="M139.44204457723384,86 L144.88393938339152,86" fill="none" stroke="#00866B" stroke-width="1.05" stroke-linejoin="round"/>
-<path d="M139.44204457723384,83.7 L139.44204457723384,88.3" fill="none" stroke="#00866B" stroke-width="0.8" stroke-linejoin="round"/>
-<path d="M144.88393938339152,83.7 L144.88393938339152,88.3" fill="none" stroke="#00866B" stroke-width="0.8" stroke-linejoin="round"/>
-<path d="M142.22016413697463,83.1 L144.92016413697462,86 L142.22016413697463,88.9 L139.52016413697464,86 Z" fill="#00866B"/>
+<path d="M147.9726748621565,86 L152.67249310383812,86" fill="none" stroke="#00866B" stroke-width="1.05" stroke-linejoin="round"/>
+<path d="M147.9726748621565,83.7 L147.9726748621565,88.3" fill="none" stroke="#00866B" stroke-width="0.8" stroke-linejoin="round"/>
+<path d="M152.67249310383812,83.7 L152.67249310383812,88.3" fill="none" stroke="#00866B" stroke-width="0.8" stroke-linejoin="round"/>
+<path d="M150.37195993647808,83.1 L153.07195993647807,86 L150.37195993647808,88.9 L147.6719599364781,86 Z" fill="#00866B"/>
 <text x="245" y="89" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#202B33" text-anchor="end">-1.2043</text>
 <text x="5" y="105" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#202B33" text-anchor="start">T+G − Glo</text>
-<path d="M139.01631290627367,102 L144.3634572759923,102" fill="none" stroke="#00866B" stroke-width="1.05" stroke-linejoin="round"/>
-<path d="M139.01631290627367,99.7 L139.01631290627367,104.3" fill="none" stroke="#00866B" stroke-width="0.8" stroke-linejoin="round"/>
-<path d="M144.3634572759923,99.7 L144.3634572759923,104.3" fill="none" stroke="#00866B" stroke-width="0.8" stroke-linejoin="round"/>
-<path d="M141.74416104725316,99.1 L144.44416104725315,102 L141.74416104725316,104.9 L139.04416104725317,102 Z" fill="#00866B"/>
+<path d="M147.60499750996362,102 L152.22298582926607,102" fill="none" stroke="#00866B" stroke-width="1.05" stroke-linejoin="round"/>
+<path d="M147.60499750996362,99.7 L147.60499750996362,104.3" fill="none" stroke="#00866B" stroke-width="0.8" stroke-linejoin="round"/>
+<path d="M152.22298582926607,99.7 L152.22298582926607,104.3" fill="none" stroke="#00866B" stroke-width="0.8" stroke-linejoin="round"/>
+<path d="M149.96086635899135,99.1 L152.66086635899134,102 L149.96086635899135,104.9 L147.26086635899136,102 Z" fill="#00866B"/>
 <text x="245" y="105" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#202B33" text-anchor="end">-1.2147</text>
 <rect x="256" y="2" width="247" height="18" rx="2" fill="#F0F4F8" stroke="none" stroke-width="0.7"/>
 <text x="262" y="14" font-family="Liberation Sans, Arial, sans-serif" font-size="9.6" font-weight="bold" fill="#202B33" text-anchor="start">(b) Audio beyond confidence</text>
@@ -54,96 +59,96 @@
 <path d="M260,54 L502,54" fill="none" stroke="#E9EDF2" stroke-width="0.35" stroke-linejoin="round"/>
 <path d="M260,81 L502,81" fill="none" stroke="#E9EDF2" stroke-width="0.35" stroke-linejoin="round"/>
 <path d="M260,108 L502,108" fill="none" stroke="#E9EDF2" stroke-width="0.35" stroke-linejoin="round"/>
-<path d="M354.719298245614,38 L354.719298245614,115" fill="none" stroke="#E4EAF0" stroke-width="0.4" stroke-linejoin="round"/>
-<path d="M354.719298245614,115 L354.719298245614,117" fill="none" stroke="#8698A8" stroke-width="0.5" stroke-linejoin="round"/>
-<text x="354.719298245614" y="127" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="middle">-0.25</text>
-<path d="M393.3157894736842,38 L393.3157894736842,115" fill="none" stroke="#E4EAF0" stroke-width="0.4" stroke-linejoin="round"/>
-<path d="M393.3157894736842,115 L393.3157894736842,117" fill="none" stroke="#8698A8" stroke-width="0.5" stroke-linejoin="round"/>
-<text x="393.3157894736842" y="127" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="middle">-0.15</text>
-<path d="M451.2105263157895,115 L451.2105263157895,117" fill="none" stroke="#8698A8" stroke-width="0.5" stroke-linejoin="round"/>
-<text x="451.2105263157895" y="127" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="middle">0.00</text>
-<path d="M347,115 L457,115" fill="none" stroke="#8698A8" stroke-width="0.55" stroke-linejoin="round"/>
-<path d="M451.2105263157895,38 L451.2105263157895,115" fill="none" stroke="#465966" stroke-width="0.85" stroke-linejoin="round" stroke-dasharray="2.2 2.2"/>
-<text x="260" y="48" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#202B33" text-anchor="start">Local − Conf</text>
-<path d="M383.76643046147876,45 L421.0937523547969,45" fill="none" stroke="#C76B24" stroke-width="1.05" stroke-linejoin="round"/>
-<path d="M383.76643046147876,42.7 L383.76643046147876,47.3" fill="none" stroke="#C76B24" stroke-width="0.8" stroke-linejoin="round"/>
-<path d="M421.0937523547969,42.7 L421.0937523547969,47.3" fill="none" stroke="#C76B24" stroke-width="0.8" stroke-linejoin="round"/>
-<circle cx="401.9101951200806" cy="45" r="2.35" fill="white" stroke="#C76B24" stroke-width="1.0"/>
+<path d="M368.6666666666667,38 L368.6666666666667,115" fill="none" stroke="#E4EAF0" stroke-width="0.4" stroke-linejoin="round"/>
+<path d="M368.6666666666667,115 L368.6666666666667,117" fill="none" stroke="#8698A8" stroke-width="0.5" stroke-linejoin="round"/>
+<text x="368.6666666666667" y="127" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="middle">-0.25</text>
+<path d="M402.0,38 L402.0,115" fill="none" stroke="#E4EAF0" stroke-width="0.4" stroke-linejoin="round"/>
+<path d="M402.0,115 L402.0,117" fill="none" stroke="#8698A8" stroke-width="0.5" stroke-linejoin="round"/>
+<text x="402.0" y="127" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="middle">-0.15</text>
+<path d="M452.0,115 L452.0,117" fill="none" stroke="#8698A8" stroke-width="0.5" stroke-linejoin="round"/>
+<text x="452.0" y="127" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="middle">0.00</text>
+<path d="M362,115 L457,115" fill="none" stroke="#8698A8" stroke-width="0.55" stroke-linejoin="round"/>
+<path d="M452.0,38 L452.0,115" fill="none" stroke="#465966" stroke-width="0.85" stroke-linejoin="round" stroke-dasharray="2.2 2.2"/>
+<text x="260" y="48" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#202B33" text-anchor="start">Local − Conf [101]</text>
+<path d="M393.75282630764076,45 L425.99005885187,45" fill="none" stroke="#C76B24" stroke-width="1.05" stroke-linejoin="round"/>
+<path d="M393.75282630764076,42.7 L393.75282630764076,47.3" fill="none" stroke="#C76B24" stroke-width="0.8" stroke-linejoin="round"/>
+<path d="M425.99005885187,42.7 L425.99005885187,47.3" fill="none" stroke="#C76B24" stroke-width="0.8" stroke-linejoin="round"/>
+<circle cx="409.4224412400696" cy="45" r="2.35" fill="white" stroke="#C76B24" stroke-width="1.0"/>
 <text x="500" y="48" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#202B33" text-anchor="end">-0.1277</text>
 <text x="260" y="75" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#202B33" text-anchor="start">Glo − Conf</text>
-<path d="M367.7104171400025,72 L393.2141704113913,72" fill="none" stroke="#0072B2" stroke-width="1.05" stroke-linejoin="round"/>
-<path d="M367.7104171400025,69.7 L367.7104171400025,74.3" fill="none" stroke="#0072B2" stroke-width="0.8" stroke-linejoin="round"/>
-<path d="M393.2141704113913,69.7 L393.2141704113913,74.3" fill="none" stroke="#0072B2" stroke-width="0.8" stroke-linejoin="round"/>
-<rect x="378.62697742422256" y="69.8" width="4.4" height="4.4" rx="0" fill="#0072B2" stroke="#0072B2" stroke-width="0.6"/>
+<path d="M379.886269348184,72 L401.9122380825652,72" fill="none" stroke="#0072B2" stroke-width="1.05" stroke-linejoin="round"/>
+<path d="M379.886269348184,69.7 L379.886269348184,74.3" fill="none" stroke="#0072B2" stroke-width="0.8" stroke-linejoin="round"/>
+<path d="M401.9122380825652,69.7 L401.9122380825652,74.3" fill="none" stroke="#0072B2" stroke-width="0.8" stroke-linejoin="round"/>
+<rect x="389.01420777546497" y="69.8" width="4.4" height="4.4" rx="0" fill="#0072B2" stroke="#0072B2" stroke-width="0.6"/>
 <text x="500" y="75" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#202B33" text-anchor="end">-0.1824</text>
 <text x="260" y="102" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#202B33" text-anchor="start">MWER: Glo − Conf</text>
-<path d="M355.86968180926243,99 L386.67080354653706,99" fill="none" stroke="#92569D" stroke-width="1.05" stroke-linejoin="round"/>
-<path d="M355.86968180926243,96.7 L355.86968180926243,101.3" fill="none" stroke="#92569D" stroke-width="0.8" stroke-linejoin="round"/>
-<path d="M386.67080354653706,96.7 L386.67080354653706,101.3" fill="none" stroke="#92569D" stroke-width="0.8" stroke-linejoin="round"/>
-<path d="M372.52439328624354,96.2 L375.2243932862435,101.2 L369.82439328624355,101.2 Z" fill="#92569D"/>
+<path d="M369.660179744363,99 L396.2611485174638,99" fill="none" stroke="#92569D" stroke-width="1.05" stroke-linejoin="round"/>
+<path d="M369.660179744363,96.7 L369.660179744363,101.3" fill="none" stroke="#92569D" stroke-width="0.8" stroke-linejoin="round"/>
+<path d="M396.2611485174638,96.7 L396.2611485174638,101.3" fill="none" stroke="#92569D" stroke-width="0.8" stroke-linejoin="round"/>
+<path d="M384.0437942017558,96.2 L386.7437942017558,101.2 L381.3437942017558,101.2 Z" fill="#92569D"/>
 <text x="500" y="102" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#202B33" text-anchor="end">-0.2039</text>
 <rect x="1" y="132" width="247" height="18" rx="2" fill="#F0F4F8" stroke="none" stroke-width="0.7"/>
-<text x="7" y="144" font-family="Liberation Sans, Arial, sans-serif" font-size="9.6" font-weight="bold" fill="#202B33" text-anchor="start">(c) Alternative fitting objective</text>
+<text x="7" y="144" font-family="Liberation Sans, Arial, sans-serif" font-size="9.6" font-weight="bold" fill="#202B33" text-anchor="start">(c) Alternative fitting scheme</text>
 <path d="M5,172 L247,172" fill="none" stroke="#E9EDF2" stroke-width="0.35" stroke-linejoin="round"/>
 <path d="M5,190 L247,190" fill="none" stroke="#E9EDF2" stroke-width="0.35" stroke-linejoin="round"/>
-<path d="M112.8108108108108,156 L112.8108108108108,192" fill="none" stroke="#E4EAF0" stroke-width="0.4" stroke-linejoin="round"/>
-<path d="M112.8108108108108,192 L112.8108108108108,194" fill="none" stroke="#8698A8" stroke-width="0.5" stroke-linejoin="round"/>
-<text x="112.8108108108108" y="204" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="middle">-0.20</text>
-<path d="M142.54054054054055,156 L142.54054054054055,192" fill="none" stroke="#E4EAF0" stroke-width="0.4" stroke-linejoin="round"/>
-<path d="M142.54054054054055,192 L142.54054054054055,194" fill="none" stroke="#8698A8" stroke-width="0.5" stroke-linejoin="round"/>
-<text x="142.54054054054055" y="204" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="middle">-0.10</text>
-<path d="M172.2702702702703,192 L172.2702702702703,194" fill="none" stroke="#8698A8" stroke-width="0.5" stroke-linejoin="round"/>
-<text x="172.2702702702703" y="204" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="middle">0.00</text>
+<path d="M124.97297297297297,156 L124.97297297297297,192" fill="none" stroke="#E4EAF0" stroke-width="0.4" stroke-linejoin="round"/>
+<path d="M124.97297297297297,192 L124.97297297297297,194" fill="none" stroke="#8698A8" stroke-width="0.5" stroke-linejoin="round"/>
+<text x="124.97297297297297" y="204" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="middle">-0.20</text>
+<path d="M150.64864864864865,156 L150.64864864864865,192" fill="none" stroke="#E4EAF0" stroke-width="0.4" stroke-linejoin="round"/>
+<path d="M150.64864864864865,192 L150.64864864864865,194" fill="none" stroke="#8698A8" stroke-width="0.5" stroke-linejoin="round"/>
+<text x="150.64864864864865" y="204" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="middle">-0.10</text>
+<path d="M176.32432432432432,192 L176.32432432432432,194" fill="none" stroke="#8698A8" stroke-width="0.5" stroke-linejoin="round"/>
+<text x="176.32432432432432" y="204" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="middle">0.00</text>
 <path d="M202.0,156 L202.0,192" fill="none" stroke="#E4EAF0" stroke-width="0.4" stroke-linejoin="round"/>
 <path d="M202.0,192 L202.0,194" fill="none" stroke="#8698A8" stroke-width="0.5" stroke-linejoin="round"/>
 <text x="202.0" y="204" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="middle">0.10</text>
-<path d="M92,192 L202,192" fill="none" stroke="#8698A8" stroke-width="0.55" stroke-linejoin="round"/>
-<path d="M172.2702702702703,156 L172.2702702702703,192" fill="none" stroke="#465966" stroke-width="0.85" stroke-linejoin="round" stroke-dasharray="2.2 2.2"/>
+<path d="M107,192 L202,192" fill="none" stroke="#8698A8" stroke-width="0.55" stroke-linejoin="round"/>
+<path d="M176.32432432432432,156 L176.32432432432432,192" fill="none" stroke="#465966" stroke-width="0.85" stroke-linejoin="round" stroke-dasharray="2.2 2.2"/>
 <text x="5" y="166" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#202B33" text-anchor="start">MWER-Conf − Conf</text>
-<path d="M109.15413476564002,163 L193.6870307937072,163" fill="none" stroke="#92569D" stroke-width="1.05" stroke-linejoin="round"/>
-<path d="M109.15413476564002,160.7 L109.15413476564002,165.3" fill="none" stroke="#92569D" stroke-width="0.8" stroke-linejoin="round"/>
-<path d="M193.6870307937072,160.7 L193.6870307937072,165.3" fill="none" stroke="#92569D" stroke-width="0.8" stroke-linejoin="round"/>
-<path d="M144.05571317880745,160.2 L146.75571317880744,165.2 L141.35571317880746,165.2 Z" fill="#92569D"/>
+<path d="M121.81493457032548,163 L194.82061750365622,163" fill="none" stroke="#92569D" stroke-width="1.05" stroke-linejoin="round"/>
+<path d="M121.81493457032548,160.7 L121.81493457032548,165.3" fill="none" stroke="#92569D" stroke-width="0.8" stroke-linejoin="round"/>
+<path d="M194.82061750365622,160.7 L194.82061750365622,165.3" fill="none" stroke="#92569D" stroke-width="0.8" stroke-linejoin="round"/>
+<path d="M151.9572068362428,160.2 L154.65720683624278,165.2 L149.2572068362428,165.2 Z" fill="#92569D"/>
 <text x="245" y="166" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#202B33" text-anchor="end">-0.0949</text>
 <text x="5" y="184" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#202B33" text-anchor="start">MWER-Glo − Glo</text>
-<path d="M102.68536694368623,181 L186.28175691086938,181" fill="none" stroke="#92569D" stroke-width="1.05" stroke-linejoin="round"/>
-<path d="M102.68536694368623,178.7 L102.68536694368623,183.3" fill="none" stroke="#92569D" stroke-width="0.8" stroke-linejoin="round"/>
-<path d="M186.28175691086938,178.7 L186.28175691086938,183.3" fill="none" stroke="#92569D" stroke-width="0.8" stroke-linejoin="round"/>
-<path d="M137.6604794509054,178.2 L140.3604794509054,183.2 L134.9604794509054,183.2 Z" fill="#92569D"/>
+<path d="M116.22827145136539,181 L188.42515369575085,181" fill="none" stroke="#92569D" stroke-width="1.05" stroke-linejoin="round"/>
+<path d="M116.22827145136539,178.7 L116.22827145136539,183.3" fill="none" stroke="#92569D" stroke-width="0.8" stroke-linejoin="round"/>
+<path d="M188.42515369575085,178.7 L188.42515369575085,183.3" fill="none" stroke="#92569D" stroke-width="0.8" stroke-linejoin="round"/>
+<path d="M146.43405043487286,178.2 L149.13405043487285,183.2 L143.73405043487287,183.2 Z" fill="#92569D"/>
 <text x="245" y="184" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#202B33" text-anchor="end">-0.1164</text>
 <rect x="256" y="132" width="247" height="18" rx="2" fill="#F0F4F8" stroke="none" stroke-width="0.7"/>
 <text x="262" y="144" font-family="Liberation Sans, Arial, sans-serif" font-size="9.6" font-weight="bold" fill="#202B33" text-anchor="start">(d) Near-zero increments · expanded axis</text>
 <path d="M260,172 L502,172" fill="none" stroke="#E9EDF2" stroke-width="0.35" stroke-linejoin="round"/>
 <path d="M260,190 L502,190" fill="none" stroke="#E9EDF2" stroke-width="0.35" stroke-linejoin="round"/>
-<path d="M354.8571428571429,156 L354.8571428571429,192" fill="none" stroke="#E4EAF0" stroke-width="0.4" stroke-linejoin="round"/>
-<path d="M354.8571428571429,192 L354.8571428571429,194" fill="none" stroke="#8698A8" stroke-width="0.5" stroke-linejoin="round"/>
-<text x="354.8571428571429" y="204" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="middle">-0.03</text>
-<path d="M402.0,192 L402.0,194" fill="none" stroke="#8698A8" stroke-width="0.5" stroke-linejoin="round"/>
-<text x="402.0" y="204" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="middle">0.00</text>
-<path d="M449.1428571428571,156 L449.1428571428571,192" fill="none" stroke="#E4EAF0" stroke-width="0.4" stroke-linejoin="round"/>
-<path d="M449.1428571428571,192 L449.1428571428571,194" fill="none" stroke="#8698A8" stroke-width="0.5" stroke-linejoin="round"/>
-<text x="449.1428571428571" y="204" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="middle">0.03</text>
-<path d="M347,192 L457,192" fill="none" stroke="#8698A8" stroke-width="0.55" stroke-linejoin="round"/>
-<path d="M402.0,156 L402.0,192" fill="none" stroke="#465966" stroke-width="0.85" stroke-linejoin="round" stroke-dasharray="2.2 2.2"/>
+<path d="M368.7857142857143,156 L368.7857142857143,192" fill="none" stroke="#E4EAF0" stroke-width="0.4" stroke-linejoin="round"/>
+<path d="M368.7857142857143,192 L368.7857142857143,194" fill="none" stroke="#8698A8" stroke-width="0.5" stroke-linejoin="round"/>
+<text x="368.7857142857143" y="204" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="middle">-0.03</text>
+<path d="M409.5,192 L409.5,194" fill="none" stroke="#8698A8" stroke-width="0.5" stroke-linejoin="round"/>
+<text x="409.5" y="204" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="middle">0.00</text>
+<path d="M450.2142857142857,156 L450.2142857142857,192" fill="none" stroke="#E4EAF0" stroke-width="0.4" stroke-linejoin="round"/>
+<path d="M450.2142857142857,192 L450.2142857142857,194" fill="none" stroke="#8698A8" stroke-width="0.5" stroke-linejoin="round"/>
+<text x="450.2142857142857" y="204" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="middle">0.03</text>
+<path d="M362,192 L457,192" fill="none" stroke="#8698A8" stroke-width="0.55" stroke-linejoin="round"/>
+<path d="M409.5,156 L409.5,192" fill="none" stroke="#465966" stroke-width="0.85" stroke-linejoin="round" stroke-dasharray="2.2 2.2"/>
 <text x="260" y="166" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#202B33" text-anchor="start">Local − Glo</text>
-<path d="M398.72241515464526,163 L434.2236380446365,163" fill="none" stroke="#0072B2" stroke-width="1.05" stroke-linejoin="round"/>
-<path d="M398.72241515464526,160.7 L398.72241515464526,165.3" fill="none" stroke="#0072B2" stroke-width="0.8" stroke-linejoin="round"/>
-<path d="M434.2236380446365,160.7 L434.2236380446365,165.3" fill="none" stroke="#0072B2" stroke-width="0.8" stroke-linejoin="round"/>
-<rect x="414.18743928908253" y="160.8" width="4.4" height="4.4" rx="0" fill="#0072B2" stroke="#0072B2" stroke-width="0.6"/>
+<path d="M406.6693585426482,163 L437.32950558400427,163" fill="none" stroke="#0072B2" stroke-width="1.05" stroke-linejoin="round"/>
+<path d="M406.6693585426482,160.7 L406.6693585426482,165.3" fill="none" stroke="#0072B2" stroke-width="0.8" stroke-linejoin="round"/>
+<path d="M437.32950558400427,160.7 L437.32950558400427,165.3" fill="none" stroke="#0072B2" stroke-width="0.8" stroke-linejoin="round"/>
+<rect x="419.7255157496622" y="160.8" width="4.4" height="4.4" rx="0" fill="#0072B2" stroke="#0072B2" stroke-width="0.6"/>
 <text x="500" y="166" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#202B33" text-anchor="end">+0.0092</text>
 <text x="260" y="184" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#202B33" text-anchor="start">T+G − Text</text>
-<path d="M358.0011918080167,181 L412.81858359817016,181" fill="none" stroke="#00866B" stroke-width="1.05" stroke-linejoin="round"/>
-<path d="M358.0011918080167,178.7 L358.0011918080167,183.3" fill="none" stroke="#00866B" stroke-width="0.8" stroke-linejoin="round"/>
-<path d="M412.81858359817016,178.7 L412.81858359817016,183.3" fill="none" stroke="#00866B" stroke-width="0.8" stroke-linejoin="round"/>
-<path d="M385.6798940666926,178.1 L388.3798940666926,181 L385.6798940666926,183.9 L382.9798940666926,181 Z" fill="#00866B"/>
+<path d="M371.5010292887417,181 L418.8433221984197,181" fill="none" stroke="#00866B" stroke-width="1.05" stroke-linejoin="round"/>
+<path d="M371.5010292887417,178.7 L371.5010292887417,183.3" fill="none" stroke="#00866B" stroke-width="0.8" stroke-linejoin="round"/>
+<path d="M418.8433221984197,178.7 L418.8433221984197,183.3" fill="none" stroke="#00866B" stroke-width="0.8" stroke-linejoin="round"/>
+<path d="M395.40536305759815,178.1 L398.10536305759814,181 L395.40536305759815,183.9 L392.70536305759816,181 Z" fill="#00866B"/>
 <text x="500" y="184" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#202B33" text-anchor="end">-0.0104</text>
 <circle cx="7" cy="214" r="2.35" fill="white" stroke="#C76B24" stroke-width="1.0"/>
 <text x="14" y="217" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="start">Original 98.75%</text>
 <rect x="123.8" y="211.8" width="4.4" height="4.4" rx="0" fill="#0072B2" stroke="#0072B2" stroke-width="0.6"/>
 <text x="133" y="217" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="start">Checkpoints 98.33%</text>
 <path d="M275,211.2 L277.7,216.2 L272.3,216.2 Z" fill="#92569D"/>
-<text x="282" y="217" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="start">Objective 98.75%</text>
+<text x="282" y="217" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="start">MWER 98.75%</text>
 <path d="M409,211.1 L411.7,214 L409,216.9 L406.3,214 Z" fill="#00866B"/>
 <text x="416" y="217" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="start">Text 98.33%</text>
-<text x="252" y="229" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="middle">CV27 ΔWER (percentage points); negative favors first. Panel x scales differ.</text>
+<text x="252" y="229" font-family="Liberation Sans, Arial, sans-serif" font-size="9" font-weight="normal" fill="#56616B" text-anchor="middle">CV27 ΔWER (pp); negative favors first. [101]: seed101; others: 3-checkpoint mean. Axes differ.</text>
 </svg>

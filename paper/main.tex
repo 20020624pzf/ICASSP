@@ -24,14 +24,14 @@ Cognitive Computing, Xinjiang University, Urumqi, China}
 \begin{abstract}\input{abstract_results.tex}\end{abstract}
 \begin{keywords}speech recognition, reranking, perturbation features, multilingual evaluation, candidate selection\end{keywords}
 \section{Introduction}
-An improvement over beam search alone cannot isolate the value of a perturbation-derived ASR score. Clean-audio confidence~\cite{jiang2005}, length and candidate consensus already inform selection; external text provides a further, resource-intensive control. The relevant question is whether scoring disrupted audio adds predictive value after these signals are available.
+Reranking gains over beam search do not isolate a perturbation score's contribution. We ask whether scoring disrupted audio adds value beyond clean-audio confidence~\cite{jiang2005}, length, candidate consensus and external text.
 
-We test this question on shared frozen candidate banks. Matched feature ablations isolate the added score from candidate quality; duplicate-coordinate and alternative-parameterization controls test simpler explanations for ridge gains. Inference measurements include candidate and score acquisition.
+On shared frozen candidate banks, matched selectors and duplicate-coordinate/alternative-parameterization controls test explanations for the gains. Measurements include candidate and score acquisition.
 
-Across five languages and three recognizer checkpoints, permutation scores yield small gains over internal confidence, without established gains beyond external text. Our contribution is a controlled assessment of scoring information, parameterization, fit sensitivity and resources.\footnote{Code, locked selectors and aggregate results: \url{https://github.com/20020624pzf/ICASSP}.}
+Across five languages and three recognizer checkpoints, permutation scores yield small gains over internal confidence, without established gains beyond external text. Our contribution is a controlled assessment of added scoring information, its parameterization, fit sensitivity and acquisition cost.\footnote{Code, locked selectors and aggregate results: \url{https://github.com/20020624pzf/ICASSP}.}
 
 \section{Related work}
-\textbf{Adaptation and reranking.} LoRA-Whisper~\cite{lorawhisper} and language experts~\cite{loraexperts} adapt ASR; we freeze it. Multilingual rescoring combines acoustics and text~\cite{gaur2022,yan2025wild}; unlike~\cite{yan2025wild}, we assume known language. RescoreBERT~\cite{rescorebert} trains a BERT reranker; we use established pseudo-log-likelihood (PLL) scoring~\cite{mlmscoring} from a frozen masked language model (MLM).
+\textbf{Adaptation and reranking.} LoRA-Whisper~\cite{lorawhisper} and language experts~\cite{loraexperts} adapt ASR; we freeze it. Multilingual rescoring combines acoustics and text~\cite{gaur2022,yan2025wild}; we isolate the added value of permutation scores with matched selectors and assume known language. RescoreBERT~\cite{rescorebert} trains a BERT reranker; we use established pseudo-log-likelihood (PLL) scoring~\cite{mlmscoring} from a frozen masked language model (MLM).
 
 \textbf{Scoring and objectives.} MBR~\cite{goel2000mbr}, minimum-WER training~\cite{mwer} and speech/text rescoring~\cite{rescoring} provide precedents. Whisper-CD~\cite{whispercd} and LCAR~\cite{lcar} alter token-wise decoding; our candidate-level CD-seq does not reproduce them. Token-probability~\cite{beyondwer} and normalization~\cite{normalization} analyses complement our feature comparisons.
 
@@ -74,7 +74,7 @@ We evaluate FLEURS~\cite{fleurs} and Common Voice v27 (CV27)~\cite{cv,cv27data} 
 
 One seed101 TRAIN-FIT fit per selector serves all checkpoints, not three independent fits. Tables~\ref{tab:main}--\ref{tab:languages} report test WER; Table~\ref{tab:cost} uses test samples. DEV/CHECK are labeled. Differences are absolute percentage points, computed before rounding.
 
-FLEURS TRAIN has 13{,}602 recordings (44.60 h); 1{,}281 calibrate selectors (1{,}016 FIT, 265 diagnostic-only CHECK). DEV has 1{,}731. Calibration selects whole language-specific text-hash groups in SHA order to reach at least 256 recordings/language; a separate hash assigns FIT/CHECK (80/20). Text groups do not imply speaker independence. Each extension locks rules and coefficients before new evaluations; earlier test exposure remains (Sec.~\ref{sec:timeline}).
+LoRA adaptation uses all 13{,}602 FLEURS TRAIN recordings (44.60 h), including the 1{,}281 later used to calibrate selectors (1{,}016 FIT, 265 diagnostic-only CHECK). DEV has 1{,}731. Calibration selects whole language-specific text-hash groups in SHA order to reach at least 256 recordings/language; a separate hash assigns FIT/CHECK (80/20). Text groups do not imply speaker independence. Each extension locks rules and coefficients before new evaluations; earlier test exposure remains (Sec.~\ref{sec:timeline}).
 
 WER-v3 fixes Unicode normalization, dotless-i conversion before Turkish lowercasing, apostrophe unification and digit folding, preserving word-internal zero-width non-joiners. WER is $100(S+D+I)/N$ with full reference-word denominator $N$; macro WER equally averages five languages. All 3{,}665 FLEURS TEST recordings (76{,}164 reference words) and 58{,}514 CV27 TEST recordings remain. Inputs are capped at 30\,s; 22 FLEURS TEST recordings exceed this window and retain full references. No CV27 TEST recording exceeds it. Recording coverage does not imply complete-audio coverage.
 

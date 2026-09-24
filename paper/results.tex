@@ -1,9 +1,9 @@
 \begin{figure*}[t]
 \centering\includegraphics[width=\textwidth]{figures/contrasts.pdf}
-\caption{Paired CV27 WER differences; family-specific client intervals condition on fixed fits. Original: seed101, 98.75\%; Checkpoints/Text: three-checkpoint mean, 98.33\% (rounded from 98.333333\%); Objective: the same mean, 98.75\%. Glo=Global, T+G=Text+Global. MWER: Glo$-$Conf compares MWER fits. Scales differ; (d) enlarges zero. All 12 contrasts appear once.}
+\caption{Paired CV27 WER differences. [101] marks seed101-only rows (Original, 98.75\%); others average three checkpoints (Checkpoints/Text, 98.33\%, rounded; MWER, 98.75\%). Intervals condition on fixed fits. Glo=Global, T+G=Text+Global. MWER: Glo$-$Conf compares MWER fits. Axes differ; (d) expands zero.}
 \label{fig:contrasts}
 \end{figure*}
-\begin{table}[t]\centering\caption{Test macro WER (\%), mean $\pm$ checkpoint SD; one fit per selector. Oracle6 is reference-dependent. FLEURS retains full references for all 22 recordings exceeding the 30-s input window. MWER and Text are separate post-exposure additions.}\label{tab:main}\begin{tabular}{lcc}\toprule Strategy & FLEURS & CV27 \\\midrule
+\begin{table}[t]\centering\caption{Test macro WER (\%), mean $\pm$ checkpoint SD; one fit per selector. Oracle6 is reference-dependent. FLEURS retains full references for all 22 recordings exceeding the 30-s input window. Text denotes Conf+PLL. MWER and Text are post-exposure additions.}\label{tab:main}\begin{tabular}{lcc}\toprule Strategy & FLEURS & CV27 \\\midrule
 \multicolumn{3}{l}{\textit{Standard controls}} \\
 B5 & $18.877\pm0.252$ & $36.414\pm1.186$ \\
 MBR & $18.954\pm0.241$ & $35.225\pm0.634$ \\
@@ -13,7 +13,7 @@ G & $21.128\pm0.277$ & $39.341\pm1.494$ \\
 Conf & $18.938\pm0.285$ & $35.298\pm0.653$ \\
 Global & $18.797\pm0.263$ & $35.116\pm0.640$ \\
 Local & $18.813\pm0.261$ & $35.125\pm0.637$ \\
-\midrule\multicolumn{3}{l}{\textit{Exploratory fitting-objective comparison}} \\
+\midrule\multicolumn{3}{l}{\textit{Exploratory fitting-scheme comparison}} \\
 MWER-Conf & $18.863\pm0.260$ & $35.203\pm0.652$ \\
 MWER-Global & $18.732\pm0.257$ & $35.000\pm0.625$ \\
 \midrule\multicolumn{3}{l}{\textit{Appended frozen-MLM controls}} \\

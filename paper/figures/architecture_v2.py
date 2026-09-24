@@ -3,6 +3,10 @@ from vector_canvas import *
 
 def tensor(s,x,y,w,h,rgb,order):
     rows,cols=len(rgb),len(rgb[0])
+    # Bin-edge ticks describe the same synthetic 80-bin array; no new signal.
+    x += 10; w -= 10
+    for label, yy in [('80',y+3),('40',y+h/2+3),('0',y+h+1)]:
+        s.text(x-3,yy,label,9,color=GRAY,anchor='end')
     s.parts.append('<g shape-rendering="crispEdges">')
     for i in range(cols):
         for j in range(rows):
@@ -22,9 +26,13 @@ def arch():
     asset=json.loads((P/'synthetic_logmel_render.json').read_text())
     wave,clean,perm,order,mel=[asset[k] for k in ['waveform_display','clean_rgb','permuted_rgb','order','provenance']]
     s=SVG(504,276)
+    s.rect(.5,.5,350,275,'white','#B9CADB',4,.65)
+    s.rect(356,.5,147.5,275,'white','#B9CADB',4,.65)
+    s.rect(.8,.8,349.4,20,'#EAF3FA','none',3)
+    s.rect(356.3,.8,146.9,20,'#EAF3FA','none',3)
     s.text(3,12,'(a) Frozen models and shared candidate evidence',10,'bold')
     s.text(361,12,'(b) Alternative selectors',10,'bold')
-    s.line([(352,22),(352,274)],'#D8E0E8',.65)
+    # Separate panels frame the frozen evidence path and alternative fits.
     ww=wave;s.line([(5+i/(len(ww)-1)*79,28+6*v) for i,v in enumerate(ww)],BLUE,.65)
     s.text(5,46,'Clean log-mel X',9,'bold',BLUE)
     tensor(s,5,52,80,39,clean,list(range(8)))
@@ -32,12 +40,12 @@ def arch():
     s.text(51,117,'T',9,'bold',ORANGE)
     s.text(5,138,'Permuted T(X)',9,'bold',ORANGE)
     tensor(s,5,144,80,39,perm,order)
-    s.text(5,209,'80 mel bins',9,color=GRAY);s.text(5,221,'Synthetic, 1.6 s',9,color=GRAY)
+    s.text(5,209,'Mel-bin index',9,color=GRAY);s.text(5,221,'Synthetic, 1.6 s',9,color=GRAY)
     s.rect(104,24,236,30,'#F2F5F9','#B7C6D5',3,.6)
     s.text(113,36,'Shared bank: b, y₂, …, yₖ  (K ≤ 6)',9.2,'bold')
     s.text(113,48,'Clean greedy + beam-5 → deduplicate',9,color=GRAY)
     s.text(107,72,'Whisper-small + LoRA',9.2,'bold',BLUE);s.lock(239,62,BLUE)
-    s.rect(104,78,146,110,'#F6F9FC','#AAC0D2',3,.6)
+    s.rect(104,78,146,110,'#F4F9FD','#8DB4D1',4,.8)
     s.text(116,91,'Encoder ×12',9,'bold');s.text(188,91,'Decoder ×12',9,'bold')
     stack(s,113,103,54,73);stack(s,188,103,54,73)
     s.rect(117,111,46,20,PB,BLUE,2,.6);s.text(140,124,'Self-attn',9,anchor='middle')

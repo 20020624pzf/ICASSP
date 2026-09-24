@@ -48,8 +48,8 @@
     },
     {
       "path": "PROVENANCE.md",
-      "bytes": 1066,
-      "sha256": "26f652d660ff9de7b53d3bd5b9071a65bc3a13936b08a2c95db9eb9960c90cd9",
+      "bytes": 1362,
+      "sha256": "da46c1952febae5420aff9bd4c6cae76922d07dfa9bda616e9899390d266cfb2",
       "category": "release documentation"
     },
     {
@@ -72,8 +72,8 @@
     },
     {
       "path": "SOURCE_ORIGINS.json",
-      "bytes": 18395,
-      "sha256": "0de6935c3391797428eec9feae5b37f260fcdca3d4175d9d6785fec74dca883b",
+      "bytes": 19741,
+      "sha256": "deaf41ca4f81914cb8102399b7eb7236f4e8305ea239f7de842b8cf66d973476",
       "category": "release documentation"
     },
     {
@@ -84,8 +84,8 @@
     },
     {
       "path": "paper/ICASSP2027_submission_final.pdf",
-      "bytes": 403705,
-      "sha256": "938079438166be300cf6ce646ae00141b1fdeaf8d65f4b97187e835d14815d10",
+      "bytes": 414250,
+      "sha256": "0a0c9351aeb2ffb4e0d35ffb461d92a00cd7dce42775277b602c59c8b71178e2",
       "category": "paper"
     },
     {
@@ -102,8 +102,8 @@
     },
     {
       "path": "paper/abstract_results.tex",
-      "bytes": 1077,
-      "sha256": "5b7134606d2f9b6adf70a0d78eaffd845feec7b548f9de1ed11d52e8388828d1",
+      "bytes": 1095,
+      "sha256": "d07089a39031eef584cb0c72e596558fdb8dc26c025871c7feb6aab87e079f79",
       "category": "paper"
     },
     {
@@ -126,56 +126,56 @@
     },
     {
       "path": "paper/diagnostic_results.tex",
-      "bytes": 973,
-      "sha256": "4f9f5351e08977f0a69f81449f1b3d62b6194b048fb689b83990a69e23eba5ef",
+      "bytes": 756,
+      "sha256": "c58c927948e7a928144b4ecc5d6f2f8d34e861b8bd281688a87afc9f4548dace",
       "category": "paper"
     },
     {
       "path": "paper/figures/architecture.pdf",
-      "bytes": 198478,
-      "sha256": "43e75353353c65958c9bd0a9d6f3f8ba3eaf7f6aa03825779d7648fc97c9a3d8",
+      "bytes": 209017,
+      "sha256": "a26458cc115590de037bfc094daddd56326d586d263d4f6bc02c205d2f018975",
       "category": "paper"
     },
     {
       "path": "paper/figures/architecture.png",
-      "bytes": 286793,
-      "sha256": "4320ebee592c38336ec76e430267e9fa1d4809f1cecd0f648c55a9afc6d30027",
+      "bytes": 291327,
+      "sha256": "e03cee469e7d57cf6ab16aa81f7469dd7a610d818640bd4a6bf5a76b5cea559c",
       "category": "paper"
     },
     {
       "path": "paper/figures/architecture.svg",
-      "bytes": 2916029,
-      "sha256": "25c68175f59d1fe5af712542e239d7ac8e1f4380b623ab2fb261c829c7c75e1f",
+      "bytes": 3024504,
+      "sha256": "254507472aeafe951fda0f53559bcd21734cd177116591f02c8267a637c99154",
       "category": "paper"
     },
     {
       "path": "paper/figures/architecture_inventory.json",
-      "bytes": 15342,
-      "sha256": "959b4c2f7e102e24596c50bcf3bb58eecba4adc0b0b08a920bc003b5d1ab3846",
+      "bytes": 16013,
+      "sha256": "c0d3f3bcf7c82e0821a396d9db843e537e1138ca01b42997f0dc1693662a6663",
       "category": "paper"
     },
     {
       "path": "paper/figures/architecture_v2.py",
-      "bytes": 7702,
-      "sha256": "8854f21258d54c8bc22fa621cd38436778bb7842d6861b6de1c8332374747431",
+      "bytes": 8146,
+      "sha256": "19c87c4b10932812eb7b81dae00afb4c81840409257fde6a437ecce95015fdf2",
       "category": "paper"
     },
     {
       "path": "paper/figures/contrasts.pdf",
-      "bytes": 27584,
-      "sha256": "99c9c6ce1bbe368e16e3f6796471df03ff8ba8e64c49389cc1c09ac479e14aa7",
+      "bytes": 27945,
+      "sha256": "8c2459bca6e6cf82cab4b2e9f0f554f057aed0e8a797b07d980f53ef64cae4aa",
       "category": "paper"
     },
     {
       "path": "paper/figures/contrasts.png",
-      "bytes": 130461,
-      "sha256": "4e4cf224dbdf55e18dc863470ecd717f643f6d8922f1c39994ff97c2f4cc58d2",
+      "bytes": 137962,
+      "sha256": "361c3408da4c1129624154390ca8c3a97b03c005257a4c80c9e9c462bc3fe516",
       "category": "paper"
     },
     {
       "path": "paper/figures/contrasts.svg",
-      "bytes": 19837,
-      "sha256": "ac79fcfa82193c5b70613222d6c1dd642667c140e3e0f9431b4bc4c395897dfe",
+      "bytes": 20292,
+      "sha256": "d6c64e3447c479900f0b3dd1d39287a20fc613f1754ca14dfdac833a25a52726",
       "category": "paper"
     },
     {
@@ -186,20 +186,20 @@
     },
     {
       "path": "paper/figures/contrasts_inventory.json",
-      "bytes": 13347,
-      "sha256": "d004b898cd40a69ddb9426557aee1be3fd1d455699458f76dbf2fd18b5e2988f",
+      "bytes": 13359,
+      "sha256": "2efbbe2c9d5f79776d92ba3e8a513a3491d1aeceb389d5497b1ef1e4e7f630c9",
       "category": "paper"
     },
     {
       "path": "paper/figures/contrasts_v2.py",
-      "bytes": 3913,
-      "sha256": "28c85b85d3be1a85e8704700660cf0c29140da060c32deec348d1a043e3351e1",
+      "bytes": 4148,
+      "sha256": "b4ecb57e500bae8cb5b890391e942ab3f95202bbe7616e27d870f0c3969b6d71",
       "category": "paper"
     },
     {
       "path": "paper/figures/figure2_rendered_values.json",
-      "bytes": 6690,
-      "sha256": "cfc56f250753f535dc47473dfecda12841af1f871b17fa5bd2a8baaa98668d1e",
+      "bytes": 6700,
+      "sha256": "d588c065e3e273601fa72a11b12569234648c702a79c2103aff7bcb5dd481482",
       "category": "paper"
     },
     {
@@ -252,8 +252,8 @@
     },
     {
       "path": "paper/main.tex",
-      "bytes": 18140,
-      "sha256": "c533dc5d916a77e2f135f914f10198b1b8341b302ce5d24d68cf8223be5b6064",
+      "bytes": 18010,
+      "sha256": "81adfbd389f098cebdc2956285fd38293afe6a2cf3a03da344f72290934fe060",
       "category": "paper"
     },
     {
@@ -270,14 +270,14 @@
     },
     {
       "path": "paper/results.tex",
-      "bytes": 2538,
-      "sha256": "4de0f1720e3a229d777e40ba801106d12d2d2dde4df304aa8e7b55aa1322d469",
+      "bytes": 2490,
+      "sha256": "017abd4fdb8401f5779e31f3bd7cd510b14ded2651447eb6d029973d0f7d54c6",
       "category": "paper"
     },
     {
       "path": "paper/robustness_results.tex",
-      "bytes": 864,
-      "sha256": "e1c6c866c51dd6fb4bff0de817959da441fed83f0dc4e7e171aa7591ff8937a2",
+      "bytes": 871,
+      "sha256": "e8b12699ecd1a74e7a6624d94f9a25fa3f35b39bccda6d3aa43c7cc217855fba",
       "category": "paper"
     },
     {
@@ -288,8 +288,8 @@
     },
     {
       "path": "paper/text_results.tex",
-      "bytes": 614,
-      "sha256": "fb587cffb91912e295ac7e8e475c248238dd781657a19d023b2502619cdc71bc",
+      "bytes": 881,
+      "sha256": "a5ccd0edb4dadb5e8389925074b6fba536dd5fae547e7a86d5bb9c5dfef87d69",
       "category": "paper"
     },
     {

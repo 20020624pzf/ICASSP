@@ -15,3 +15,5 @@ checks do not attest that any additional human or institutional approval occurre
 No training, decoding, selector refit, new evaluation, new statistical family, or
 GPU timing was performed to create this public package. Release verification
 reads existing aggregate results. Old experimental evidence remains unchanged.
+
+The subsequent visual refinement clarifies seed101-only figure rows, TRAIN/calibration overlap and the Text=Conf+PLL baseline. Figure layout and prose were edited; underlying estimates, intervals, axis bounds, fitted coefficients and evaluation data remain unchanged. No new experiment was run.

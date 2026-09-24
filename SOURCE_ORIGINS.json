@@ -293,7 +293,7 @@
       "path": "paper/abstract_results.tex",
       "sha256": "5b7134606d2f9b6adf70a0d78eaffd845feec7b548f9de1ed11d52e8388828d1",
       "bytes": 1077,
-      "operation": "byte-identical copy"
+      "operation": "Editorial/visual refinement; original source hash retained. All reported estimates/intervals unchanged."
     },
     {
       "path": "paper/conclusion_results.tex",
@@ -311,7 +311,7 @@
       "path": "paper/diagnostic_results.tex",
       "sha256": "4f9f5351e08977f0a69f81449f1b3d62b6194b048fb689b83990a69e23eba5ef",
       "bytes": 973,
-      "operation": "byte-identical copy"
+      "operation": "Editorial/visual refinement; original source hash retained. All reported estimates/intervals unchanged."
     },
     {
       "path": "paper/language_results.tex",
@@ -323,25 +323,25 @@
       "path": "paper/main.tex",
       "sha256": "268199d17dbc86900a0321e2e569042e2c9e213e6e660695af4e754cc595671e",
       "bytes": 17118,
-      "operation": "Add verified public repository footnote, enable links and make DOI targets absolute; displayed bibliography unchanged"
+      "operation": "Editorial/visual refinement; original source hash retained. All reported estimates/intervals unchanged."
     },
     {
       "path": "paper/results.tex",
       "sha256": "4de0f1720e3a229d777e40ba801106d12d2d2dde4df304aa8e7b55aa1322d469",
       "bytes": 2538,
-      "operation": "byte-identical copy"
+      "operation": "Editorial/visual refinement; original source hash retained. All reported estimates/intervals unchanged."
     },
     {
       "path": "paper/robustness_results.tex",
       "sha256": "e1c6c866c51dd6fb4bff0de817959da441fed83f0dc4e7e171aa7591ff8937a2",
       "bytes": 864,
-      "operation": "byte-identical copy"
+      "operation": "Editorial/visual refinement; original source hash retained. All reported estimates/intervals unchanged."
     },
     {
       "path": "paper/text_results.tex",
       "sha256": "fb587cffb91912e295ac7e8e475c248238dd781657a19d023b2502619cdc71bc",
       "bytes": 614,
-      "operation": "byte-identical copy"
+      "operation": "Editorial/visual refinement; original source hash retained. All reported estimates/intervals unchanged."
     },
     {
       "path": "paper/spconf.sty",
@@ -377,49 +377,49 @@
       "path": "paper/figures/architecture.pdf",
       "sha256": "43e75353353c65958c9bd0a9d6f3f8ba3eaf7f6aa03825779d7648fc97c9a3d8",
       "bytes": 198478,
-      "operation": "byte-identical copy"
+      "operation": "Editorial/visual refinement; original source hash retained. All reported estimates/intervals unchanged."
     },
     {
       "path": "paper/figures/architecture.png",
       "sha256": "4320ebee592c38336ec76e430267e9fa1d4809f1cecd0f648c55a9afc6d30027",
       "bytes": 286793,
-      "operation": "byte-identical copy"
+      "operation": "Editorial/visual refinement; original source hash retained. All reported estimates/intervals unchanged."
     },
     {
       "path": "paper/figures/architecture.svg",
       "sha256": "25c68175f59d1fe5af712542e239d7ac8e1f4380b623ab2fb261c829c7c75e1f",
       "bytes": 2916029,
-      "operation": "byte-identical copy"
+      "operation": "Editorial/visual refinement; original source hash retained. All reported estimates/intervals unchanged."
     },
     {
       "path": "paper/figures/architecture_inventory.json",
       "sha256": "959b4c2f7e102e24596c50bcf3bb58eecba4adc0b0b08a920bc003b5d1ab3846",
       "bytes": 15342,
-      "operation": "byte-identical copy"
+      "operation": "Editorial/visual refinement; original source hash retained. All reported estimates/intervals unchanged."
     },
     {
       "path": "paper/figures/architecture_v2.py",
       "sha256": "8854f21258d54c8bc22fa621cd38436778bb7842d6861b6de1c8332374747431",
       "bytes": 7702,
-      "operation": "byte-identical copy"
+      "operation": "Editorial/visual refinement; original source hash retained. All reported estimates/intervals unchanged."
     },
     {
       "path": "paper/figures/contrasts.pdf",
       "sha256": "99c9c6ce1bbe368e16e3f6796471df03ff8ba8e64c49389cc1c09ac479e14aa7",
       "bytes": 27584,
-      "operation": "byte-identical copy"
+      "operation": "Editorial/visual refinement; original source hash retained. All reported estimates/intervals unchanged."
     },
     {
       "path": "paper/figures/contrasts.png",
       "sha256": "4e4cf224dbdf55e18dc863470ecd717f643f6d8922f1c39994ff97c2f4cc58d2",
       "bytes": 130461,
-      "operation": "byte-identical copy"
+      "operation": "Editorial/visual refinement; original source hash retained. All reported estimates/intervals unchanged."
     },
     {
       "path": "paper/figures/contrasts.svg",
       "sha256": "ac79fcfa82193c5b70613222d6c1dd642667c140e3e0f9431b4bc4c395897dfe",
       "bytes": 19837,
-      "operation": "byte-identical copy"
+      "operation": "Editorial/visual refinement; original source hash retained. All reported estimates/intervals unchanged."
     },
     {
       "path": "paper/figures/contrasts_data.json",
@@ -431,19 +431,19 @@
       "path": "paper/figures/contrasts_inventory.json",
       "sha256": "d004b898cd40a69ddb9426557aee1be3fd1d455699458f76dbf2fd18b5e2988f",
       "bytes": 13347,
-      "operation": "byte-identical copy"
+      "operation": "Editorial/visual refinement; original source hash retained. All reported estimates/intervals unchanged."
     },
     {
       "path": "paper/figures/contrasts_v2.py",
       "sha256": "28c85b85d3be1a85e8704700660cf0c29140da060c32deec348d1a043e3351e1",
       "bytes": 3913,
-      "operation": "byte-identical copy"
+      "operation": "Editorial/visual refinement; original source hash retained. All reported estimates/intervals unchanged."
     },
     {
       "path": "paper/figures/figure2_rendered_values.json",
       "sha256": "cfc56f250753f535dc47473dfecda12841af1f871b17fa5bd2a8baaa98668d1e",
       "bytes": 6690,
-      "operation": "byte-identical copy"
+      "operation": "Editorial/visual refinement; original source hash retained. All reported estimates/intervals unchanged."
     },
     {
       "path": "paper/figures/figure_text_inventory.json",
@@ -491,7 +491,7 @@
       "path": "paper/ICASSP2027_submission_final.pdf",
       "sha256": "7205fcf3acb70d9560d6d5d7ef8566a8c8350abe40a0ebcdc6c19ec1b75b88ab",
       "bytes": 399349,
-      "operation": "Recompiled manuscript with verified repository link; original content SHA retained here"
+      "operation": "Editorial/visual refinement; original source hash retained. All reported estimates/intervals unchanged."
     },
     {
       "path": "reproduction/source/fixed_bank_mwer.py",
